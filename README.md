@@ -98,6 +98,12 @@ do {
 }
 ```
 
+## Support
+
+If you have a feature request, or spotted a bug or a technical problem, [create an issue here](https://github.com/Adyen/adyen-authentication-ios/issues/new/choose).
+
+For other questions, [contact our support team](https://support.adyen.com/hc/en-us/requests/new?ticket_form_id=360000705420).
+
 ## See also
 
  * [Reporting security issues](https://www.adyen.help/hc/en-us/articles/115001187330-How-do-I-report-a-possible-security-issue-to-Adyen-).
