@@ -17,7 +17,7 @@ jobs:
         xcode-version: latest-stable
 
     - name: Set current marketing version
-      run: echo "::set-output name=MARKETING_VERSION::$(cat AdyenAuthentication.podspec | sed -n \"s/version.*=.*\'\(.*\)\'/\1/p\")"
+      run: echo "::set-output name=MARKETING_VERSION::$(cat AdyenAuthentication.podspec | sed -n "s/version.*=.*\'\(.*\)\'/\1/p")"
       id: get-current-marketing-version
 
     - name: Deploy to current version 🚀
