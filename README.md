@@ -57,6 +57,18 @@ authenticationService.register(withInput: input) { [weak self] result in
         /// Error raised, for example if the device is not protected by either pass code, face Id, or fingerprint.
     }
 }
+
+// or 
+
+let input: String = /// `RegistrationInput` as Base64 URL String
+authenticationService.register(withBase64URLString: input) { [weak self] result in
+    switch result {
+    case let .success(output):
+        /// output is a Base64 URL String should be sent to a FIDO compliant backend to be validated.
+    case let .failure(error):
+        /// Error raised, for example if the device is not protected by either pass code, face Id, or fingerprint.
+    }
+}
 ```
 You can also use the async version of this function:
 
@@ -65,6 +77,16 @@ do {
     let input = RegistrationInput(serverChallenge: /// Server Challenge)
     async let output = try await authenticationService.register(with: input)
     /// output is a `RegistrationOutput`, the `RegistrationOutput.attestationObject` should be sent to a FIDO compliant backend to be validated.
+} catch {
+    /// Error raised, for example if the device is not protected by either pass code, face Id, or fingerprint.
+}
+
+// or 
+
+do {
+    let input: String = /// `RegistrationInput` as Base64 URL String
+    async let output = try await authenticationService.register(withBase64URLString: input)
+    /// output is a Base64 URL String should be sent to a FIDO compliant backend to be validated.
 } catch {
     /// Error raised, for example if the device is not protected by either pass code, face Id, or fingerprint.
 }
@@ -83,6 +105,18 @@ authenticationService.authenticate(withInput: input) { result in
         /// Failure to authenticate, which usually means that the current account is not registered (i.e non of the store credentials match the `AuthenticationInput.candidateCredentialIdentifiers`).
     }
 }
+
+// or 
+
+let input: String = /// `AuthenticationInput` as Base64 URL String
+authenticationService.authenticate(withBase64URLString: input) { result in
+    switch result {
+    case let .success(output):
+        /// Authentication went through, then the `output` - which is Base64 URL String - should be sent back to a `FIDO` compliant server to validate them both.
+    case let .failure(error):
+        /// Failure to authenticate, which usually means that the current account is not registered (i.e non of the store credentials match the `AuthenticationInput.candidateCredentialIdentifiers`).
+    }
+}
 ```
 
 You can also use the async version of this function:
@@ -93,6 +127,16 @@ do {
                                 serverChallenge: /// Server challenge in the form of opaque binary data)
     async let output = try await authenticationService.authenticate(with: input)
     /// Authentication went through, then the `AuthenticationOutput.assertionObject` and `AuthenticationOutput.resolvedCredentialIdentifier` should be sent back to a `FIDO` compliant server to validate them both.
+} catch {
+    /// Failure to authenticate, which usually means that the current account is not registered (i.e non of the store credentials match the `AuthenticationInput.candidateCredentialIdentifiers`).
+}
+
+// or 
+
+do {
+    let input: String = /// `AuthenticationInput` as Base64 URL String
+    async let output = try await authenticationService.authenticate(withBase64URLString: input)
+    /// Authentication went through, then the `output` - which is Base64 URL String - should be sent back to a `FIDO` compliant server to validate them both.
 } catch {
     /// Failure to authenticate, which usually means that the current account is not registered (i.e non of the store credentials match the `AuthenticationInput.candidateCredentialIdentifiers`).
 }
