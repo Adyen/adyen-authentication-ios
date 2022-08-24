@@ -1,6 +1,6 @@
 # AdyenAuthentication iOS SDK
 
-Adyen passwordless Authentication SDK.
+AdyenAuthentication SDK Provides reusable and easy to use two factor authentication for security sensitive use cases like banking, issuing and PSD2 strong customer authentication.
 
 ## Installation
 
