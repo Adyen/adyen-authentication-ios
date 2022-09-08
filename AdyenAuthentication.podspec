@@ -1,4 +1,4 @@
-version = '1.0.0-beta.1'
+version = '1.0.0'
 
 Pod::Spec.new do |spec|
   spec.name                   = 'AdyenAuthentication'
