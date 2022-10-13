@@ -1,0 +1,150 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AdyenAuthentication
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import AdyenAuthentication
+import AuthenticationServices
+import CommonCrypto
+import DeviceCheck
+import Foundation
+import LocalAuthentication
+import Security
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@_hasMissingDesignatedInitializers @available(iOS 14.0, *)
+final public class AuthenticationService : AdyenAuthentication.AuthenticationServiceProtocol {
+  public typealias Configuration = AdyenAuthentication.DeviceLocalConfiguration
+  public init(configuration: AdyenAuthentication.AuthenticationService.Configuration)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func register(with input: AdyenAuthentication.RegistrationInput) async throws -> AdyenAuthentication.RegistrationOutput
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func authenticate(with input: AdyenAuthentication.AuthenticationInput) async throws -> AdyenAuthentication.AuthenticationOutput
+  #endif
+  final public func checkSupport() throws -> AdyenAuthentication.CheckSupportOutput
+  final public func reset() throws
+  @objc deinit
+}
+public struct DeviceLocalConfiguration {
+  public let localizedRegistrationReason: Swift.String
+  public let localizedAuthenticationReason: Swift.String
+  public let appleTeamIdendtifier: Swift.String
+  public init(localizedRegistrationReason: Swift.String, localizedAuthenticationReason: Swift.String, appleTeamIdendtifier: Swift.String)
+}
+public protocol AuthenticationServiceProtocol : AnyObject, AdyenAuthentication.DeviceSupportCheckerProtocol {
+  func authenticate(with input: AdyenAuthentication.AuthenticationInput, completion: @escaping (Swift.Result<AdyenAuthentication.AuthenticationOutput, Swift.Error>) -> Swift.Void)
+  func register(with input: AdyenAuthentication.RegistrationInput, completion: @escaping (Swift.Result<AdyenAuthentication.RegistrationOutput, Swift.Error>) -> Swift.Void)
+  func authenticate(withBase64URLString input: Swift.String, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
+  func register(withBase64URLString input: Swift.String, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0.0, *)
+  func authenticate(with input: AdyenAuthentication.AuthenticationInput) async throws -> AdyenAuthentication.AuthenticationOutput
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0.0, *)
+  func register(with input: AdyenAuthentication.RegistrationInput) async throws -> AdyenAuthentication.RegistrationOutput
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0.0, *)
+  func authenticate(withBase64URLString input: Swift.String) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0.0, *)
+  func register(withBase64URLString input: Swift.String) async throws -> Swift.String
+  #endif
+  func reset() throws
+}
+extension AdyenAuthentication.AuthenticationServiceProtocol {
+  public func authenticate(withBase64URLString input: Swift.String, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
+  public func register(withBase64URLString input: Swift.String, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
+  @available(iOS 13.0.0, *)
+  public func register(with input: AdyenAuthentication.RegistrationInput, completion: @escaping (Swift.Result<AdyenAuthentication.RegistrationOutput, Swift.Error>) -> Swift.Void)
+  @available(iOS 13.0.0, *)
+  public func authenticate(with input: AdyenAuthentication.AuthenticationInput, completion: @escaping (Swift.Result<AdyenAuthentication.AuthenticationOutput, Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0.0, *)
+  public func authenticate(withBase64URLString input: Swift.String) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0.0, *)
+  public func register(withBase64URLString input: Swift.String) async throws -> Swift.String
+  #endif
+}
+public struct AuthenticationInput : Swift.Codable {
+  public let candidateCredentialIdentifiers: [Swift.String]?
+  public let serverChallenge: Swift.String
+  public let pspReference: Swift.String?
+  public init(candidateCredentialIdentifiers: [Swift.String], serverChallenge: Swift.String, pspReference: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RegistrationInput : Swift.Codable {
+  public let serverChallenge: Swift.String
+  public init(serverChallenge: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CheckSupportOutput : Swift.Codable {
+  public let device: AdyenAuthentication.Device
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RegistrationOutput : Swift.Codable {
+  public let attestationObject: Foundation.Data
+  public let relyingPartyIdentifier: Swift.String
+  public let device: AdyenAuthentication.Device
+  public let version: Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum Device : Swift.String, Swift.Codable {
+  case iOS
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AuthenticationOutput : Swift.Codable {
+  public let assertionObject: Foundation.Data
+  public let resolvedCredentialIdentifier: Swift.String
+  public let relyingPartyIdentifier: Swift.String
+  public let device: AdyenAuthentication.Device
+  public let version: Swift.Int
+  public let pspReference: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum AdyenAuthenticationError : Foundation.LocalizedError {
+  case unknown
+  case noStoredCredentialsMatch(Swift.Error?)
+  case credentialsStoreFailure(Swift.Error)
+  case currentDeviceIsNotSupported
+  case invalidBundleIdentifier
+  case invalidBase64String
+  case payloadDecodingFailure(Swift.Error)
+  case payloadEncodingFailure(Swift.Error)
+  case deviceOwnerAuthenticationFailure(Swift.Error?)
+  case deviceOwnerBiometricsHasChanged
+  case deviceIntegrityServiceFailure(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public protocol DeviceSupportCheckerProtocol {
+  func checkSupport() throws -> AdyenAuthentication.CheckSupportOutput
+  func checkSupport() throws -> Swift.String
+}
+extension AdyenAuthentication.DeviceSupportCheckerProtocol {
+  public func checkSupport() throws -> Swift.String
+}
+@available(iOS 14.0, *)
+public struct DeviceSupportChecker : AdyenAuthentication.DeviceSupportCheckerProtocol {
+  public init()
+  public func checkSupport() throws -> AdyenAuthentication.CheckSupportOutput
+}
+extension AdyenAuthentication.Device : Swift.Equatable {}
+extension AdyenAuthentication.Device : Swift.Hashable {}
+extension AdyenAuthentication.Device : Swift.RawRepresentable {}

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		UJwnoiMQPfHEg4sngW7+fOYr/SM=
+		Z9izTHxR5hmgHVztDeFYBJSuuac=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,7 +15,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pRIJy1f7tR6ZIk6QlrSwUbg8hM67yxg1DXBddp8uy9M=
+			pK2ffTu7SnFU2iu7amHfZQM0S3S7bcEvNk/tJr/WXxw=
 			</data>
 		</dict>
 		<key>Headers/AdyenAuthentication.h</key>
@@ -25,60 +25,88 @@
 			Jxvf/fvbywFYywWFFz4/Px9ME2GkrhPPXPVUIevYbdM=
 			</data>
 		</dict>
+		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zidp/cOe1319FTTB3NB6PZINKB8uCPqydEddRR9a4Ug=
+			</data>
+		</dict>
+		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BNP0agw5OKSCo0KTutTTtNzeJNJlVliEZ02oS5RzGPg=
+			</data>
+		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xCq3inYNdeyYDu938K/QUuy9EGq3ey+wZ7kaafI9u1g=
+			5g9jRqAs130Kk5LHfL/wIsaheBdDbIiRUPDg51F17x4=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HoqZY9wqDzZordGNVVk5qV66tHasXWLTtOn4MEBs0x8=
+			BNP0agw5OKSCo0KTutTTtNzeJNJlVliEZ02oS5RzGPg=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hTsWCRNNqgIOzzOuDKEn4U5Ydgp0PODJ1cQBRdOwKmc=
+			Kpg8eOAun23lgA7cGE7rMyiCx3aTXopTCVxslieiiAo=
+			</data>
+		</dict>
+		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zidp/cOe1319FTTB3NB6PZINKB8uCPqydEddRR9a4Ug=
+			</data>
+		</dict>
+		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RSPN9H1KJAMwVpZIW5VY4D6biWQzzTG1L/pqTg9SJPg=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EncumpMoiTFbt/APcVzAI//6+pAozjrjNDjNg5BxwgY=
+			7rKcd1cS5afkJ8vxI4bXVtf8tcxMA5nyaKyQ08MCMEw=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RuBZxcqIApHjQq3WF8kvvBTRInmj7vm7IqLmFODtcVE=
+			RSPN9H1KJAMwVpZIW5VY4D6biWQzzTG1L/pqTg9SJPg=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BXxWVc0kKPQM+OOfS4ot6EeiFjRB04P5J2PdCq8QN60=
+			Q3gPsozIAbeN9988kz3Be8/7cfWdR80FyITICNAoC8Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/sQHGvt223w9RLXtI+y2S6/K84WMEQxodYFAmbvsJmU=
+			G/BndLOA6reXr3G6MiFDsPbtVTydXVd7P84S5UAl6c0=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z5ZijDOPz7mlvD0yEZY+8mBXIJAq9fJbbO3kZLwrWDw=
+			1LnQCTpFOcvjsWzvYXKuwL2n6sSnv1Yt2spid8MlNw8=
 			</data>
 		</dict>
 	</dict>

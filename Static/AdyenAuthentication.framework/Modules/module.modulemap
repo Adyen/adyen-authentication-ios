@@ -6,6 +6,6 @@ framework module AdyenAuthentication {
 }
 
 module AdyenAuthentication.Swift {
-    header "AdyenAuthentication-Swift.h"
-    requires objc
+  header "AdyenAuthentication-Swift.h"
+  requires objc
 }
