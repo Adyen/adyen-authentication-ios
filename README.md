@@ -17,14 +17,14 @@ The SDK is available via [CocoaPods](http://cocoapods.org), [Carthage](https://g
 2. Run `carthage update`.
 3. Link the framework with your target as described in [Carthage Readme](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
 
-### Dynamic Framework
+### Dynamic xcFramework
 
-Drag the dynamic `AdyenAuthentication.xcframework` to the `Embedded Binaries` section in your general target settings. Select "Copy items if needed" when asked.
+Drag the dynamic `XCFramework/Dynamic/AdyenAuthentication.xcframework` to the `Embedded Binaries` section in your general target settings. Select "Copy items if needed" when asked.
 
-### Static Framework
+### Static xcFramework
 
 1. In Xcode, select "File" and then "Add Files to...".
-2. Select the static `AdyenAuthentication.framework` and check "Copy items if needed", then select "Add".
+2. Select the static `XCFramework/Static/AdyenAuthentication.xcframework` and check "Copy items if needed", then select "Add".
 
 ### Swift Package Manager
 

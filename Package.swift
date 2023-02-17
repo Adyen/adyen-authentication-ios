@@ -12,12 +12,14 @@ let package = Package(
     products: [
         .library(
             name: "AdyenAuthentication",
-            targets: ["AdyenAuthentication"])
+            targets: ["AdyenAuthentication"]
+        )
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
             name: "AdyenAuthentication",
-            path: "XCFramework/Dynamic/AdyenAuthentication.xcframework")
+            path: "XCFramework/Dynamic/AdyenAuthentication.xcframework"
+        )
     ]
 )
