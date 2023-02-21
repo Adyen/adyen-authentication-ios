@@ -3642,6 +3642,27 @@
         "printedName": "DeviceSupportChecker",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceSupportChecker",
+                "printedName": "AdyenAuthentication.DeviceSupportChecker",
+                "usr": "s:19AdyenAuthentication20DeviceSupportCheckerV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19AdyenAuthentication20DeviceSupportCheckerVACycfc",
+            "mangledName": "$s19AdyenAuthentication20DeviceSupportCheckerVACycfc",
+            "moduleName": "AdyenAuthentication",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "isDeviceSupported",
             "printedName": "isDeviceSupported",

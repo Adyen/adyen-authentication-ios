@@ -146,6 +146,7 @@ extension AdyenAuthentication.DeviceSupportCheckerProtocol {
 }
 @available(iOS 14.0, *)
 public struct DeviceSupportChecker : AdyenAuthentication.DeviceSupportCheckerProtocol {
+  public init()
   public var isDeviceSupported: Swift.Bool {
     get
   }
