@@ -80,8 +80,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "DeviceCheck",
+        "printedName": "DeviceCheck",
         "declKind": "Import",
         "moduleName": "AdyenAuthentication",
         "declAttributes": [
@@ -90,8 +90,8 @@
       },
       {
         "kind": "Import",
-        "name": "DeviceCheck",
-        "printedName": "DeviceCheck",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AdyenAuthentication"
       },
@@ -3621,8 +3621,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "DeviceCheck",
+        "printedName": "DeviceCheck",
         "declKind": "Import",
         "moduleName": "AdyenAuthentication",
         "declAttributes": [
@@ -3631,8 +3631,8 @@
       },
       {
         "kind": "Import",
-        "name": "DeviceCheck",
-        "printedName": "DeviceCheck",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AdyenAuthentication"
       },
@@ -3910,133 +3910,133 @@
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/SerialOperationAttestationService.swift",
       "kind": "Array",
-      "offset": 774,
+      "offset": 790,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Synchronized Across Devices Service\/AcrossDevicesAuthenticationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1263,
+      "offset": 1298,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Synchronized Across Devices Service\/AcrossDevicesAuthenticationService.swift",
       "kind": "StringLiteral",
-      "offset": 852,
+      "offset": 887,
       "length": 34,
       "value": "\"AdyenAuthentication.AcrossDevicesAuthenticationService\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Serial Operation Service\/SerialOperationAuthenticationService.swift",
       "kind": "Array",
-      "offset": 691,
+      "offset": 704,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
-      "offset": 1380,
+      "offset": 1403,
       "length": 11,
       "value": "\"challenge\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1461,
       "length": 23,
       "value": "\"registeredCredentials\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
-      "offset": 1380,
+      "offset": 1403,
       "length": 11,
       "value": "\"challenge\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1461,
       "length": 23,
       "value": "\"registeredCredentials\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
-      "offset": 2565,
+      "offset": 2588,
       "length": 11,
       "value": "\"challenge\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
-      "offset": 2565,
+      "offset": 2588,
       "length": 11,
       "value": "\"challenge\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "IntegerLiteral",
-      "offset": 776,
+      "offset": 798,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
-      "offset": 1587,
+      "offset": 1609,
       "length": 6,
       "value": "\"rpId\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
-      "offset": 1587,
+      "offset": 1609,
       "length": 6,
       "value": "\"rpId\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "IntegerLiteral",
-      "offset": 2594,
+      "offset": 2616,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
-      "offset": 3942,
+      "offset": 3964,
       "length": 14,
       "value": "\"credentialId\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
-      "offset": 3995,
+      "offset": 4017,
       "length": 6,
       "value": "\"rpId\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
-      "offset": 3942,
+      "offset": 3964,
       "length": 14,
       "value": "\"credentialId\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Services Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
-      "offset": 3995,
+      "offset": 4017,
       "length": 6,
       "value": "\"rpId\""
     },
     {
       "filePath": "\/Users\/mohamede\/Documents\/ios-code-base\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/MockAttestationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 265,
+      "offset": 301,
       "length": 4,
       "value": "true"
     }

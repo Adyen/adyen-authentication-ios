@@ -19,12 +19,12 @@ The SDK is available via [CocoaPods](http://cocoapods.org), [Carthage](https://g
 
 ### Dynamic xcFramework
 
-Drag the dynamic `XCFramework/Dynamic/AdyenAuthentication.xcframework` to the `Embedded Binaries` section in your general target settings. Select "Copy items if needed" when asked.
+Drag the dynamic `XCFramework/Dynamic/AdyenAuthentication.xcframework` to the `Frameworks, Libraries, and Embedded Content` section in your general target settings. Select "Copy items if needed" when asked.
 
 ### Static xcFramework
 
-1. In Xcode, select "File" and then "Add Files to...".
-2. Select the static `XCFramework/Static/AdyenAuthentication.xcframework` and check "Copy items if needed", then select "Add".
+1. Drag the static `XCFramework/Static/AdyenAuthentication.xcframework` to the `Frameworks, Libraries, and Embedded Content` section in your general target settings.
+2. Make sure the static `AdyenAuthentication.xcframework` is not embedded.
 
 ### Swift Package Manager
 

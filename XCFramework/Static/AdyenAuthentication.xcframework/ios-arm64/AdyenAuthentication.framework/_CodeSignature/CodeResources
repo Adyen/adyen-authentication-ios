@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9jP7wt5l5jlMO7fJBS4/2e/BJ1I=
+		LlLuvj4NzS2TIVlJyWmp7HzwDpk=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		VPspzvYrvwFABDTyi+4iYko0ujE=
+		TjeZUb66heT3KwxXj2VeBX8rdps=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		BHGCbu9ZAM44/orrgVpUf6Y1WiI=
+		0QwmA+WGnUOMeOP7LrqEFk2T2u4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,11 +69,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VPspzvYrvwFABDTyi+4iYko0ujE=
+			TjeZUb66heT3KwxXj2VeBX8rdps=
 			</data>
 			<key>hash2</key>
 			<data>
-			/tVPUMHrrXRezaPI3udqO9CzWsVzSGxMqVecf81btk8=
+			LUHAs8spEhr2Y3wD7S2WeF7+ZYVpAJmzQ/st4UBatfM=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -113,11 +113,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BHGCbu9ZAM44/orrgVpUf6Y1WiI=
+			0QwmA+WGnUOMeOP7LrqEFk2T2u4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hEFE4J8cICnevgVl9iVD+/ki1/NDhhcEWHkbQD9Tkf8=
+			JeF3VBWCD9SQPgHFR3iiknLrfnV+so+QorLSnn6kG1M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
