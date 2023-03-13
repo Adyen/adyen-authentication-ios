@@ -45,7 +45,7 @@ let configuration = AuthenticationService.Configuration(localizedRegistrationRea
 self.authenticationService = try? AuthenticationService(configuration: configuration)
 ```
 
-* Check Device support
+### Check Device support
 
 ```
 let deviceSupport: String = try authenticationService.checkSupport()
