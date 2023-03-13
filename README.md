@@ -47,7 +47,7 @@ self.authenticationService = try? AuthenticationService(configuration: configura
 
 ### Check Device support
 
-```
+```Swift
 let deviceSupport: String = try authenticationService.checkSupport()
 ```
 
