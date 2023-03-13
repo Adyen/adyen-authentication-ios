@@ -45,6 +45,14 @@ let configuration = AuthenticationService.Configuration(localizedRegistrationRea
 self.authenticationService = try? AuthenticationService(configuration: configuration)
 ```
 
+* Check Device support
+
+```
+let deviceSupport: String = try authenticationService.checkSupport()
+```
+
+This call will throw an error in case the current device is not supported, otherwise returns an opaque string payload that needs to be sent to backend API depending on the use case.
+
 ### For first time registration:
 
 ```Swift
