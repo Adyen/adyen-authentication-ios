@@ -27,7 +27,7 @@ jobs:
       run: |
         gem install cocoapods
         pod repo update
-        pod lib lint Adyen3DS2.podspec --allow-warnings --verbose
+        pod lib lint AdyenAuthentication.podspec --allow-warnings --verbose
 
     - name: Test Cocoapods Integration
       run: |
