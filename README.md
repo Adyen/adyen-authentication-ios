@@ -38,12 +38,27 @@ https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_y
 
 ### Initialization
 
+There are two configuration options. 
+
+1. Using device check apis
+
 ```Swift
 let configuration = AuthenticationService.Configuration(localizedRegistrationReason: // Text explaining to the user why we need their biometrics while registration,
                                                         localizedAuthenticationReason: // Text explaining to the user why we need their biometrics while authentication.
                                                         appleTeamIdentifier: // The Apple registered development team identifier.)
-self.authenticationService = try? AuthenticationService(configuration: configuration)
+self.authenticationService =  AuthenticationService(configuration: configuration)
 ```
+
+2. Using Apple passkeys
+
+```Swift
+let configuration = AuthenticationService.PassKeyConfiguration(
+                    relyingPartyIdentifier: "com.example.com",
+                    displayName: "App name"
+                )
+self.authenticationService = AuthenticationService(configuration: configuration)
+```
+
 
 ### Check Device support
 

@@ -53,6 +53,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdyenAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "DeviceCheck",
         "printedName": "DeviceCheck",
         "declKind": "Import",
@@ -113,17 +123,47 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "DeviceLocalConfiguration",
-                "printedName": "AdyenAuthentication.DeviceLocalConfiguration",
-                "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV"
+                "name": "DeviceCheckConfiguration",
+                "printedName": "AdyenAuthentication.DeviceCheckConfiguration",
+                "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19AdyenAuthentication0B7ServiceC13configurationAcA24DeviceLocalConfigurationV_tcfc",
-            "mangledName": "$s19AdyenAuthentication0B7ServiceC13configurationAcA24DeviceLocalConfigurationV_tcfc",
+            "usr": "s:19AdyenAuthentication0B7ServiceC13configurationAcA24DeviceCheckConfigurationV_tcfc",
+            "mangledName": "$s19AdyenAuthentication0B7ServiceC13configurationAcA24DeviceCheckConfigurationV_tcfc",
             "moduleName": "AdyenAuthentication",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(passKeyConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthenticationService",
+                "printedName": "AdyenAuthentication.AuthenticationService",
+                "usr": "s:19AdyenAuthentication0B7ServiceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PassKeyConfiguration",
+                "printedName": "AdyenAuthentication.PassKeyConfiguration",
+                "usr": "s:19AdyenAuthentication20PassKeyConfigurationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19AdyenAuthentication0B7ServiceC20passKeyConfigurationAcA04PasseF0V_tcfc",
+            "mangledName": "$s19AdyenAuthentication0B7ServiceC20passKeyConfigurationAcA04PasseF0V_tcfc",
+            "moduleName": "AdyenAuthentication",
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "init_kind": "Designated"
@@ -426,8 +466,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "DeviceLocalConfiguration",
-        "printedName": "DeviceLocalConfiguration",
+        "name": "DeviceCheckConfiguration",
+        "printedName": "DeviceCheckConfiguration",
         "children": [
           {
             "kind": "Var",
@@ -442,8 +482,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV27localizedRegistrationReasonSSvp",
-            "mangledName": "$s19AdyenAuthentication24DeviceLocalConfigurationV27localizedRegistrationReasonSSvp",
+            "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV27localizedRegistrationReasonSSvp",
+            "mangledName": "$s19AdyenAuthentication24DeviceCheckConfigurationV27localizedRegistrationReasonSSvp",
             "moduleName": "AdyenAuthentication",
             "declAttributes": [
               "HasStorage",
@@ -466,8 +506,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV27localizedRegistrationReasonSSvg",
-                "mangledName": "$s19AdyenAuthentication24DeviceLocalConfigurationV27localizedRegistrationReasonSSvg",
+                "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV27localizedRegistrationReasonSSvg",
+                "mangledName": "$s19AdyenAuthentication24DeviceCheckConfigurationV27localizedRegistrationReasonSSvg",
                 "moduleName": "AdyenAuthentication",
                 "implicit": true,
                 "accessorKind": "get"
@@ -487,8 +527,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV09localizedB6ReasonSSvp",
-            "mangledName": "$s19AdyenAuthentication24DeviceLocalConfigurationV09localizedB6ReasonSSvp",
+            "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV09localizedB6ReasonSSvp",
+            "mangledName": "$s19AdyenAuthentication24DeviceCheckConfigurationV09localizedB6ReasonSSvp",
             "moduleName": "AdyenAuthentication",
             "declAttributes": [
               "HasStorage",
@@ -511,8 +551,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV09localizedB6ReasonSSvg",
-                "mangledName": "$s19AdyenAuthentication24DeviceLocalConfigurationV09localizedB6ReasonSSvg",
+                "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV09localizedB6ReasonSSvg",
+                "mangledName": "$s19AdyenAuthentication24DeviceCheckConfigurationV09localizedB6ReasonSSvg",
                 "moduleName": "AdyenAuthentication",
                 "implicit": true,
                 "accessorKind": "get"
@@ -532,8 +572,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV19appleTeamIdentifierSSvp",
-            "mangledName": "$s19AdyenAuthentication24DeviceLocalConfigurationV19appleTeamIdentifierSSvp",
+            "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV19appleTeamIdentifierSSvp",
+            "mangledName": "$s19AdyenAuthentication24DeviceCheckConfigurationV19appleTeamIdentifierSSvp",
             "moduleName": "AdyenAuthentication",
             "declAttributes": [
               "HasStorage",
@@ -556,8 +596,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV19appleTeamIdentifierSSvg",
-                "mangledName": "$s19AdyenAuthentication24DeviceLocalConfigurationV19appleTeamIdentifierSSvg",
+                "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV19appleTeamIdentifierSSvg",
+                "mangledName": "$s19AdyenAuthentication24DeviceCheckConfigurationV19appleTeamIdentifierSSvg",
                 "moduleName": "AdyenAuthentication",
                 "implicit": true,
                 "accessorKind": "get"
@@ -571,9 +611,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DeviceLocalConfiguration",
-                "printedName": "AdyenAuthentication.DeviceLocalConfiguration",
-                "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV"
+                "name": "DeviceCheckConfiguration",
+                "printedName": "AdyenAuthentication.DeviceCheckConfiguration",
+                "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV"
               },
               {
                 "kind": "TypeNominal",
@@ -595,8 +635,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV27localizedRegistrationReason0fbH019appleTeamIdentifierACSS_S2Stcfc",
-            "mangledName": "$s19AdyenAuthentication24DeviceLocalConfigurationV27localizedRegistrationReason0fbH019appleTeamIdentifierACSS_S2Stcfc",
+            "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV27localizedRegistrationReason0fbH019appleTeamIdentifierACSS_S2Stcfc",
+            "mangledName": "$s19AdyenAuthentication24DeviceCheckConfigurationV27localizedRegistrationReason0fbH019appleTeamIdentifierACSS_S2Stcfc",
             "moduleName": "AdyenAuthentication",
             "declAttributes": [
               "AccessControl",
@@ -606,8 +646,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:19AdyenAuthentication24DeviceLocalConfigurationV",
-        "mangledName": "$s19AdyenAuthentication24DeviceLocalConfigurationV",
+        "usr": "s:19AdyenAuthentication24DeviceCheckConfigurationV",
+        "mangledName": "$s19AdyenAuthentication24DeviceCheckConfigurationV",
         "moduleName": "AdyenAuthentication",
         "declAttributes": [
           "AccessControl",
@@ -648,7 +688,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<Swift.Bool, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -658,7 +698,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "printedName": "Swift.Result<Swift.Bool, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -669,7 +709,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -710,7 +750,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<[Swift.String], Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<[Swift.String], any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -720,7 +760,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<[Swift.String], Swift.Error>",
+                    "printedName": "Swift.Result<[Swift.String], any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -739,7 +779,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -780,7 +820,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<Swift.String, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<Swift.String, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -790,7 +830,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<Swift.String, Swift.Error>",
+                    "printedName": "Swift.Result<Swift.String, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -801,7 +841,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -842,7 +882,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<Swift.String, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<Swift.String, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -852,7 +892,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<Swift.String, Swift.Error>",
+                    "printedName": "Swift.Result<Swift.String, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -863,7 +903,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1073,7 +1113,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<Swift.Bool, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1083,7 +1123,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "printedName": "Swift.Result<Swift.Bool, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1094,7 +1134,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1134,7 +1174,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<[Swift.String], Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<[Swift.String], any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1144,7 +1184,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<[Swift.String], Swift.Error>",
+                    "printedName": "Swift.Result<[Swift.String], any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1163,7 +1203,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1203,7 +1243,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<Swift.String, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<Swift.String, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1213,7 +1253,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<Swift.String, Swift.Error>",
+                    "printedName": "Swift.Result<Swift.String, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1224,7 +1264,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1264,7 +1304,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<Swift.String, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<Swift.String, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1274,7 +1314,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<Swift.String, Swift.Error>",
+                    "printedName": "Swift.Result<Swift.String, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1285,7 +1325,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1329,6 +1369,16 @@
       },
       {
         "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "AdyenAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1353,6 +1403,16 @@
         "printedName": "LocalAuthentication",
         "declKind": "Import",
         "moduleName": "AdyenAuthentication"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdyenAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1397,6 +1457,16 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AdyenAuthentication"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdyenAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1482,18 +1552,98 @@
           },
           {
             "kind": "Var",
+            "name": "userCancelled",
+            "printedName": "userCancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> AdyenAuthentication.AdyenAuthenticationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdyenAuthenticationError",
+                    "printedName": "AdyenAuthentication.AdyenAuthenticationError",
+                    "usr": "s:19AdyenAuthentication0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdyenAuthentication.AdyenAuthenticationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdyenAuthenticationError",
+                        "printedName": "AdyenAuthentication.AdyenAuthenticationError",
+                        "usr": "s:19AdyenAuthentication0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19AdyenAuthentication0aB5ErrorO13userCancelledyA2CmF",
+            "mangledName": "$s19AdyenAuthentication0aB5ErrorO13userCancelledyA2CmF",
+            "moduleName": "AdyenAuthentication",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "noStoredCredentialsExist",
+            "printedName": "noStoredCredentialsExist",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> AdyenAuthentication.AdyenAuthenticationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdyenAuthenticationError",
+                    "printedName": "AdyenAuthentication.AdyenAuthenticationError",
+                    "usr": "s:19AdyenAuthentication0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdyenAuthentication.AdyenAuthenticationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdyenAuthenticationError",
+                        "printedName": "AdyenAuthentication.AdyenAuthenticationError",
+                        "usr": "s:19AdyenAuthentication0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19AdyenAuthentication0aB5ErrorO24noStoredCredentialsExistyA2CmF",
+            "mangledName": "$s19AdyenAuthentication0aB5ErrorO24noStoredCredentialsExistyA2CmF",
+            "moduleName": "AdyenAuthentication",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "noStoredCredentialsMatch",
             "printedName": "noStoredCredentialsMatch",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (Swift.Error?) -> AdyenAuthentication.AdyenAuthenticationError",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> ((any Swift.Error)?) -> AdyenAuthentication.AdyenAuthenticationError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?) -> AdyenAuthentication.AdyenAuthenticationError",
+                    "printedName": "((any Swift.Error)?) -> AdyenAuthentication.AdyenAuthenticationError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1504,12 +1654,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -1549,12 +1699,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (any Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
+                    "printedName": "(any Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1565,7 +1715,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -1722,12 +1872,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (any Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
+                    "printedName": "(any Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1738,7 +1888,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -1775,12 +1925,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (any Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
+                    "printedName": "(any Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1791,7 +1941,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -1828,12 +1978,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (Swift.Error?) -> AdyenAuthentication.AdyenAuthenticationError",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> ((any Swift.Error)?) -> AdyenAuthentication.AdyenAuthenticationError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?) -> AdyenAuthentication.AdyenAuthenticationError",
+                    "printedName": "((any Swift.Error)?) -> AdyenAuthentication.AdyenAuthenticationError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1844,12 +1994,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -1929,12 +2079,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (any Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
+                    "printedName": "(any Swift.Error) -> AdyenAuthentication.AdyenAuthenticationError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1945,7 +2095,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -2172,6 +2322,82 @@
       },
       {
         "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "AdyenAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PassKeyConfiguration",
+        "printedName": "PassKeyConfiguration",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(relyingPartyIdentifier:displayName:presentationContextWindow:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassKeyConfiguration",
+                "printedName": "AdyenAuthentication.PassKeyConfiguration",
+                "usr": "s:19AdyenAuthentication20PassKeyConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindow",
+                "printedName": "UIKit.UIWindow",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIWindow"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19AdyenAuthentication20PassKeyConfigurationV22relyingPartyIdentifier11displayName25presentationContextWindowACSS_SSSo8UIWindowCtcfc",
+            "mangledName": "$s19AdyenAuthentication20PassKeyConfigurationV22relyingPartyIdentifier11displayName25presentationContextWindowACSS_SSSo8UIWindowCtcfc",
+            "moduleName": "AdyenAuthentication",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19AdyenAuthentication20PassKeyConfigurationV",
+        "mangledName": "$s19AdyenAuthentication20PassKeyConfigurationV",
+        "moduleName": "AdyenAuthentication",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdyenAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "DeviceCheck",
         "printedName": "DeviceCheck",
         "declKind": "Import",
@@ -2307,6 +2533,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdyenAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DeviceCheck",
+        "printedName": "DeviceCheck",
+        "declKind": "Import",
+        "moduleName": "AdyenAuthentication"
       },
       {
         "kind": "TypeDecl",
@@ -2459,557 +2702,221 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/SerialOperationAttestationService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/SerialOperationAttestationService.swift",
       "kind": "Array",
       "offset": 985,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/SerialOperationAttestationService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeySystemAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 197,
+      "length": 26,
+      "value": "\"AdyenAuthentication.PassKeySystemAuthenticator\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Serial Operation Service\/SerialOperationAuthenticationService.swift",
+      "kind": "Array",
+      "offset": 939,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "kind": "StringLiteral",
+      "offset": 1417,
+      "length": 11,
+      "value": "\"challenge\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "kind": "StringLiteral",
+      "offset": 1475,
+      "length": 23,
+      "value": "\"registeredCredentials\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "kind": "StringLiteral",
+      "offset": 1417,
+      "length": 11,
+      "value": "\"challenge\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "kind": "StringLiteral",
+      "offset": 1475,
+      "length": 23,
+      "value": "\"registeredCredentials\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "kind": "StringLiteral",
+      "offset": 2343,
+      "length": 11,
+      "value": "\"challenge\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "kind": "StringLiteral",
+      "offset": 2343,
+      "length": 11,
+      "value": "\"challenge\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "IntegerLiteral",
-      "offset": 4946,
+      "offset": 887,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/BiometryProtectedAttestationService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2619,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 1799,
+      "length": 12,
+      "value": "\"clientData\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/BiometryProtectedAttestationService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 1850,
+      "length": 6,
+      "value": "\"rpId\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 1799,
+      "length": 12,
+      "value": "\"clientData\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 1850,
+      "length": 6,
+      "value": "\"rpId\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3394,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 4964,
+      "length": 12,
+      "value": "\"clientData\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 5044,
+      "length": 14,
+      "value": "\"credentialId\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 5097,
+      "length": 6,
+      "value": "\"rpId\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 4964,
+      "length": 12,
+      "value": "\"clientData\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 5044,
+      "length": 14,
+      "value": "\"credentialId\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "kind": "StringLiteral",
+      "offset": 5097,
+      "length": 6,
+      "value": "\"rpId\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeyAuthenticationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2194,
+      "length": 50,
+      "value": "\"AdyenAuthentication.credentialIdentifier.passKey\""
+    },
+    {
+      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "kind": "StringLiteral",
+      "offset": 0,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "kind": "StringLiteral",
+      "offset": 5,
+      "length": 498,
+      "value": "\"\""
+    },
+    {
+      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "kind": "Array",
+      "offset": 26,
+      "length": 217,
+      "value": "[53, 195, 97, 98, 87, 215, 149, 98, 34, 129, 128, 41, 135, 106, 147, 67, 213, 160, 36, 22, 81, 145, 230, 87, 70, 177, 113, 51, 54, 196, 50, 116, 97, 231, 153, 130, 79, 192, 247, 130, 40, 164, 248, 33, 40, 145, 76, 16]"
+    },
+    {
+      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "kind": "Array",
+      "offset": 245,
+      "length": 212,
+      "value": "[116, 167, 24, 7, 57, 150, 224, 22, 74, 228, 238, 93, 238, 9, 242, 55, 188, 207, 74, 56, 50, 227, 131, 51, 35, 223, 5, 90, 87, 168, 123, 16, 4, 137, 237, 235, 41, 169, 146, 240, 6, 212, 153, 82, 91, 218, 41, 105]"
+    },
+    {
+      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "kind": "StringLiteral",
+      "offset": 502,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeyAuthenticationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2689,
+      "offset": 3570,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/BiometryProtectedAttestationService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3941,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/AppleAttestationService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4032,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Public Authentication Service\/AuthenticationService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1722,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/Hasher.swift",
-      "kind": "IntegerLiteral",
-      "offset": 377,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Storage\/BiometricStateStorage.swift",
-      "kind": "Array",
-      "offset": 446,
-      "length": 216,
-      "value": "[65, 100, 121, 101, 110, 65, 117, 116, 104, 101, 110, 116, 105, 99, 97, 116, 105, 111, 110, 46, 98, 105, 111, 109, 101, 116, 114, 105, 99, 83, 116, 97, 116, 101, 79, 98, 106, 101, 99, 116]"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Device Local Service\/DeviceLocalAuthenticationService.swift",
-      "kind": "Array",
-      "offset": 2190,
-      "length": 220,
-      "value": "[65, 100, 121, 101, 110, 65, 117, 116, 104, 101, 110, 116, 105, 99, 97, 116, 105, 111, 110, 46, 99, 114, 101, 100, 101, 110, 116, 105, 97, 108, 73, 100, 101, 110, 116, 105, 102, 105, 101, 114]"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Device Local Service\/DeviceLocalAuthenticationService.swift",
-      "kind": "Array",
-      "offset": 5785,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Serial Operation Service\/SerialOperationAuthenticationService.swift",
-      "kind": "Array",
-      "offset": 846,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Serial Operation Service\/SerialOperationAuthenticationService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2162,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/Authentication Context\/DeviceAuthenticationContext.swift",
-      "kind": "BooleanLiteral",
-      "offset": 693,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeyAuthenticationService.swift",
       "kind": "StringLiteral",
-      "offset": 1417,
-      "length": 11,
-      "value": "\"challenge\""
+      "offset": 1874,
+      "length": 28,
+      "value": "\"AdyenAuthentication.PassKeyAuthenticationService\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
-      "kind": "StringLiteral",
-      "offset": 1475,
-      "length": 23,
-      "value": "\"registeredCredentials\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
-      "kind": "StringLiteral",
-      "offset": 1417,
-      "length": 11,
-      "value": "\"challenge\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
-      "kind": "StringLiteral",
-      "offset": 1475,
-      "length": 23,
-      "value": "\"registeredCredentials\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
-      "kind": "StringLiteral",
-      "offset": 2608,
-      "length": 11,
-      "value": "\"challenge\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
-      "kind": "StringLiteral",
-      "offset": 2608,
-      "length": 11,
-      "value": "\"challenge\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "IntegerLiteral",
-      "offset": 812,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 1041,
-      "length": 44,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 1064,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 1084,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 1623,
-      "length": 6,
-      "value": "\"rpId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 1623,
-      "length": 6,
-      "value": "\"rpId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2944,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 3359,
-      "length": 44,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 3382,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 3402,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 4294,
-      "length": 14,
-      "value": "\"credentialId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 4347,
-      "length": 6,
-      "value": "\"rpId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 4294,
-      "length": 14,
-      "value": "\"credentialId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 4347,
-      "length": 6,
-      "value": "\"rpId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 1447,
-      "length": 23,
-      "value": "\"Unknown error occured\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 1552,
-      "length": 93,
-      "value": "\"None of the credentials identifiers stored matches the list passed in `AuthenticationInput`\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 1704,
-      "length": 75,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 1719,
-      "length": 1,
-      "value": "\", with underlying error: { \""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 1775,
-      "length": 1,
-      "value": "\" }.\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 1824,
-      "length": 17,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 1839,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 1925,
-      "length": 78,
-      "value": "\"Credentials store operation failed with error: \""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2002,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2066,
-      "length": 34,
-      "value": "\"Current device is not supported.\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2159,
-      "length": 45,
-      "value": "\"Current App has no valid bundle identifier.\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2259,
-      "length": 24,
-      "value": "\"Invalid base64 string.\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2352,
-      "length": 82,
-      "value": "\"Payload decoding failed with underlying error: { \""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2431,
-      "length": 1,
-      "value": "\" }\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2503,
-      "length": 82,
-      "value": "\"Payload encoding failed with underlying error: { \""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2582,
-      "length": 1,
-      "value": "\" }\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2675,
-      "length": 36,
-      "value": "\"Device owner authentication failed\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2770,
-      "length": 73,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2785,
-      "length": 4,
-      "value": "\" with underlying error: { \""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2840,
-      "length": 1,
-      "value": "\" }\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2888,
-      "length": 17,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2903,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2986,
-      "length": 49,
-      "value": "\"Device owner registered biometrics has changed.\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 3111,
-      "length": 90,
-      "value": "\"Device integrity service failed with underlying error: { \""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 3198,
-      "length": 1,
-      "value": "\" }\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 3512,
-      "length": 6,
-      "value": "\"file\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 3534,
-      "length": 6,
-      "value": "\"line\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/ErrorThrowingHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 3556,
-      "length": 10,
-      "value": "\"function\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 303,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 314,
-      "length": 3,
-      "value": "\"+\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 368,
-      "length": 3,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 379,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "IntegerLiteral",
-      "offset": 413,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "IntegerLiteral",
-      "offset": 418,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 460,
-      "length": 3,
-      "value": "\"=\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 745,
-      "length": 3,
-      "value": "\"+\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 756,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 810,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 821,
-      "length": 3,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 875,
-      "length": 3,
-      "value": "\"=\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Utilities\/String+Base64URL.swift",
-      "kind": "StringLiteral",
-      "offset": 886,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/MockAttestationService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/MockAttestationService.swift",
       "kind": "BooleanLiteral",
       "offset": 301,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/MockAttestationService.swift",
-      "kind": "StringLiteral",
-      "offset": 517,
-      "length": 46,
-      "value": "\"rkOigxFineFYe3BMI6aGNVHdLlpQYfn1sW\/OIXBYkl4=\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/MockAttestationService.swift",
-      "kind": "StringLiteral",
-      "offset": 731,
-      "length": 6982,
-      "value": "\"o2NmbXRvYXBwbGUtYXBwYXR0ZXN0Z2F0dFN0bXSiY3g1Y4JZAuswggLnMIICbaADAgECAgYBfFALeUkwCgYIKoZIzj0EAwIwTzEjMCEGA1UEAwwaQXBwbGUgQXBwIEF0dGVzdGF0aW9uIENBIDExEzARBgNVBAoMCkFwcGxlIEluYy4xEzARBgNVBAgMCkNhbGlmb3JuaWEwHhcNMjExMDA0MTA0MTQxWhcNMjExMDA3MTA0MTQxWjCBkTFJMEcGA1UEAwxAYWU0M2EyODMxMTYyOWRlMTU4N2I3MDRjMjNhNjg2MzU1MWRkMmU1YTUwNjFmOWY1YjE2ZmNlMjE3MDU4OTI1ZTEaMBgGA1UECwwRQUFBIENlcnRpZmljYXRpb24xEzARBgNVBAoMCkFwcGxlIEluYy4xEzARBgNVBAgMCkNhbGlmb3JuaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARlwSmnx2zASaykPRIHYqz2MWLWnTcG\/ZDw9EnGHgu3TviY9y7\/QzH5H4PO513XjNFnOsvn+yVUi+Td6QyDWnZ0o4HxMIHuMAwGA1UdEwEB\/wQCMAAwDgYDVR0PAQH\/BAQDAgTwMHwGCSqGSIb3Y2QIBQRvMG2kAwIBCr+JMAMCAQG\/iTEDAgEAv4kyAwIBAb+JMwMCAQG\/iTQkBCJCMk5ZU1M1OTMyLmNvbS5hZHllbi5BZHllbjNEUzJEZW1vpQYEBHNrcyC\/iTYDAgEFv4k3AwIBAL+JOQMCAQC\/iToDAgEAMBsGCSqGSIb3Y2QIBwQOMAy\/ingIBAYxNS4wLjEwMwYJKoZIhvdjZAgCBCYwJKEiBCDRxXVZ+U5vfLsnZU\/CGQ0wd75NhM3N98hcVArRkq4wMDAKBggqhkjOPQQDAgNoADBlAjAWtRPO50aSQwHyogt3rpN5wRTUUDopLNudf2exb7aXylHKi56uhv0Stb5xF\/7Ls6QCMQDSbZR2+48algoZ0Q6HGcE9nfXRTrf++15EP6NqHahSEeL0Ko1J0rnRPrDD4ubjd3RZAkcwggJDMIIByKADAgECAhAJusXhvEAa2dRTlbw4GghUMAoGCCqGSM49BAMDMFIxJjAkBgNVBAMMHUFwcGxlIEFwcCBBdHRlc3RhdGlvbiBSb290IENBMRMwEQYDVQQKDApBcHBsZSBJbmMuMRMwEQYDVQQIDApDYWxpZm9ybmlhMB4XDTIwMDMxODE4Mzk1NVoXDTMwMDMxMzAwMDAwMFowTzEjMCEGA1UEAwwaQXBwbGUgQXBwIEF0dGVzdGF0aW9uIENBIDExEzARBgNVBAoMCkFwcGxlIEluYy4xEzARBgNVBAgMCkNhbGlmb3JuaWEwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAASuWzegd015sjWPQOfR8iYm8cJf7xeALeqzgmpZh0\/40q0VJXiaomYEGRJItjy5ZwaemNNjvV43D7+gjjKegHOphed0bqNZovZvKdsyr0VeIRZY1WevniZ+smFNwhpmzpmjZjBkMBIGA1UdEwEB\/wQIMAYBAf8CAQAwHwYDVR0jBBgwFoAUrJEQUzO9vmhB\/6cMqeX66uXliqEwHQYDVR0OBBYEFD7jXRwEGanJtDH4hHTW4eFXcuObMA4GA1UdDwEB\/wQEAwIBBjAKBggqhkjOPQQDAwNpADBmAjEAu76IjXONBQLPvP1mbQlXUDW81ocsP4QwSSYp7dH5FOh5mRya6LWu+NOoVDP3tg0GAjEAqzjt0MyB7QCkUsO6RPmTY2VT\/swpfy60359evlpKyraZXEuCDfkEOG94B7tYlDm3Z3JlY2VpcHRZDl0wgAYJKoZIhvcNAQcCoIAwgAIBATEPMA0GCWCGSAFlAwQCAQUAMIAGCSqGSIb3DQEHAaCAJIAEggPoMYIEFjAqAgECAgEBBCJCMk5ZU1M1OTMyLmNvbS5hZHllbi5BZHllbjNEUzJEZW1vMIIC9QIBAwIBAQSCAuswggLnMIICbaADAgECAgYBfFALeUkwCgYIKoZIzj0EAwIwTzEjMCEGA1UEAwwaQXBwbGUgQXBwIEF0dGVzdGF0aW9uIENBIDExEzARBgNVBAoMCkFwcGxlIEluYy4xEzARBgNVBAgMCkNhbGlmb3JuaWEwHhcNMjExMDA0MTA0MTQxWhcNMjExMDA3MTA0MTQxWjCBkTFJMEcGA1UEAwxAYWU0M2EyODMxMTYyOWRlMTU4N2I3MDRjMjNhNjg2MzU1MWRkMmU1YTUwNjFmOWY1YjE2ZmNlMjE3MDU4OTI1ZTEaMBgGA1UECwwRQUFBIENlcnRpZmljYXRpb24xEzARBgNVBAoMCkFwcGxlIEluYy4xEzARBgNVBAgMCkNhbGlmb3JuaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARlwSmnx2zASaykPRIHYqz2MWLWnTcG\/ZDw9EnGHgu3TviY9y7\/QzH5H4PO513XjNFnOsvn+yVUi+Td6QyDWnZ0o4HxMIHuMAwGA1UdEwEB\/wQCMAAwDgYDVR0PAQH\/BAQDAgTwMHwGCSqGSIb3Y2QIBQRvMG2kAwIBCr+JMAMCAQG\/iTEDAgEAv4kyAwIBAb+JMwMCAQG\/iTQkBCJCMk5ZU1M1OTMyLmNvbS5hZHllbi5BZHllbjNEUzJEZW1vpQYEBHNrcyC\/iTYDAgEFv4k3AwIBAL+JOQMCAQC\/iToDAgEAMBsGCSqGSIb3Y2QIBwQOMAy\/ingIBAYxNS4wLjEwMwYJKoZIhvdjZAgCBCYwJKEiBCDRxXVZ+U5vfLsnZU\/CGQ0wd75NhM3N98hcVArRkq4wMDAKBggqhkjOPQQDAgNoADBlAjAWtRPO50aSQwHyogt3rpN5wRTUUDopLNudf2exb7aXylHKi56uhv0Stb5xF\/7Ls6QCMQDSbZR2+48algoZ0Q6HGcE9nfXRTrf++15EP6NqHahSEeL0Ko1J0rnRPrDD4ubjd3QwKAIBBAIBAQQgffg6yLg73ik4q8MP6+mHnhSoQIEl3B8X3wSwt6L1MoYwYAIBBQIBAQRYMFJjZkI4cjkxZmVic0p3dXR4OFR0bnpITVRkdFpkQ3FPYjR0RU1sV3lseW9GK1M5YmEzUEtHcFJPN1d5Ynk3OG80Y2phV25ldlVKTWpiZngrK0NTaXc9PTAOAgEGAgEBBAZBVFRFU1QwDwIBBwIBAQQHc2FuZGJveDAgAgEMAgEBBBgyMDIxLTEwLQQyMDVUMTA6NDE6NDEuNzQ0WjAgAgEVAgEBBBgyMDIyLTAxLTAzVDEwOjQxOjQxLjc0NFoAAAAAAACggDCCA64wggNUoAMCAQICEFpjJPW2ctrfH4W+ZDeqFOIwCgYIKoZIzj0EAwIwfDEwMC4GA1UEAwwnQXBwbGUgQXBwbGljYXRpb24gSW50ZWdyYXRpb24gQ0EgNSAtIEcxMSYwJAYDVQQLDB1BcHBsZSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTETMBEGA1UECgwKQXBwbGUgSW5jLjELMAkGA1UEBhMCVVMwHhcNMjEwNTA1MDQwNzUyWhcNMjIwNjA0MDQwNzUxWjBaMTYwNAYDVQQDDC1BcHBsaWNhdGlvbiBBdHRlc3RhdGlvbiBGcmF1ZCBSZWNlaXB0IFNpZ25pbmcxEzARBgNVBAoMCkFwcGxlIEluYy4xCzAJBgNVBAYTAlVTMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsXe1jucNyoc6PZZ1HC+gAoLvrp2OYRC2uUxlc0XTttpsRERdei9p2MvNc++eqh6L1DVluytBItt4JPr96ysEqOCAdgwggHUMAwGA1UdEwEB\/wQCMAAwHwYDVR0jBBgwFoAU2Rf+S2eQOEuS9NvO1VeAFAuPPckwQwYIKwYBBQUHAQEENzA1MDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5hcHBsZS5jb20vb2NzcDAzLWFhaWNhNWcxMDEwggEcBgNVHSAEggETMIIBDzCCAQsGCSqGSIb3Y2QFATCB\/TCBwwYIKwYBBQUHAgIwgbYMgbNSZWxpYW5jZSBvbiB0aGlzIGNlcnRpZmljYXRlIGJ5IGFueSBwYXJ0eSBhc3N1bWVzIGFjY2VwdGFuY2Ugb2YgdGhlIHRoZW4gYXBwbGljYWJsZSBzdGFuZGFyZCB0ZXJtcyBhbmQgY29uZGl0aW9ucyBvZiB1c2UsIGNlcnRpZmljYXRlIHBvbGljeSBhbmQgY2VydGlmaWNhdGlvbiBwcmFjdGljZSBzdGF0ZW1lbnRzLjA1BggrBgEFBQcCARYpaHR0cDovL3d3dy5hcHBsZS5jb20vY2VydGlmaWNhdGVhdXRob3JpdHkwHQYDVR0OBBYEFIGCBRw26M+diRwFHH9m3uETIOVTMA4GA1UdDwEB\/wQEAwIHgDAPBgkqhkiG92NkDA8EAgUAMAoGCCqGSM49BAMCA0gAMEUCIEbl6FNbfgVKn3\/xjyoz1uGyGSpRZBDXeykfBquci6kTAiEAuHeXtKhLMS55fYtQ4yjVQbYt4ZdBgvJH8JTG8orOCxYwggL5MIICf6ADAgECAhBW+4PUK\/+NwzeZI7Varm69MAoGCCqGSM49BAMDMGcxGzAZBgNVBAMMEkFwcGxlIFJvb3QgQ0EgLSBHMzEmMCQGA1UECwwdQXBwbGUgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkxEzARBgNVBAoMCkFwcGxlIEluYy4xCzAJBgNVBAYTAlVTMB4XDTE5MDMyMjE3NTMzM1oXDTM0MDMyMjAwMDAwMFowfDEwMC4GA1UEAwwnQXBwbGUgQXBwbGljYXRpb24gSW50ZWdyYXRpb24gQ0EgNSAtIEcxMSYwJAYDVQQLDB1BcHBsZSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTETMBEGA1UECgwKQXBwbGUgSW5jLjELMAkGA1UEBhMCVVMwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASSzmO9fYaxqygKOxzhr\/sElICRrPYx36bLKDVvREvhIeVX3RKNjbqCfJW+Sfq+M8quzQQZ8S9DJfr0vrPLg366o4H3MIH0MA8GA1UdEwEB\/wQFMAMBAf8wHwYDVR0jBBgwFoAUu7DeoVgziJqkipnevr3rr9rLJKswRgYIKwYBBQUHAQEEOjA4MDYGCCsGAQUFBzABhipodHRwOi8vb2NzcC5hcHBsZS5jb20vb2NzcDAzLWFwcGxlcm9vdGNhZzMwNwYDVR0fBDAwLjAsoCqgKIYmaHR0cDovL2NybC5hcHBsZS5jb20vYXBwbGVyb290Y2FnMy5jcmwwHQYDVR0OBBYEFNkX\/ktnkDhLkvTbztVXgBQLjz3JMA4GA1UdDwEB\/wQEAwIBBjAQBgoqhkiG92NkBgIDBAIFADAKBggqhkjOPQQDAwNoADBlAjEAjW+mn6Hg5OxbTnOKkn89eFOYj\/TaH1gew3VK\/jioTCqDGhqqDaZkbeG5k+jRVUztAjBnOyy04eg3B3fL1ex2qBo6VTs\/NWrIxeaSsOFhvoBJaeRfK6ls4RECqsxh2Ti3c0owggJDMIIByaADAgECAggtxfyI0sVLlTAKBggqhkjOPQQDAzBnMRswGQYDVQQDDBJBcHBsZSBSb290IENBIC0gRzMxJjAkBgNVBAsMHUFwcGxlIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MRMwEQYDVQQKDApBcHBsZSBJbmMuMQswCQYDVQQGEwJVUzAeFw0xNDA0MzAxODE5MDZaFw0zOTA0MzAxODE5MDZaMGcxGzAZBgNVBAMMEkFwcGxlIFJvb3QgQ0EgLSBHMzEmMCQGA1UECwwdQXBwbGUgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkxEzARBgNVBAoMCkFwcGxlIEluYy4xCzAJBgNVBAYTAlVTMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEmOkvPUBypO2TInKBExzdEJXxxaNOcdwUFtkO5aYFKndke19OONO7HES1f\/UftjJiXcnphFtPME8RWgD9WFgMpfUPLE0HRxN12peXl28xXO0rnXsgO9i5VNlemaQ6UQoxo0IwQDAdBgNVHQ4EFgQUu7DeoVgziJqkipnevr3rr9rLJKswDwYDVR0TAQH\/BAUwAwEB\/zAOBgNVHQ8BAf8EBAMCAQYwCgYIKoZIzj0EAwMDaAAwZQIxAIPpwcQWXhpdNBjZ7e\/0bA4ARku437JGEcUP\/eZ6jKGma87CA9Sc9ZPGdLhq36ojFQIwbWaKEMrUDdRPzY1DPrSKY6UzbuNt2he3ZB\/IUyb5iGJ0OQsXW8tRqAzoGAPnorIoAAAxgf4wgfsCAQEwgZAwfDEwMC4GA1UEAwwnQXBwbGUgQXBwbGljYXRpb24gSW50ZWdyYXRpb24gQ0EgNSAtIEcxMSYwJAYDVQQLDB1BcHBsZSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTETMBEGA1UECgwKQXBwbGUgSW5jLjELMAkGA1UEBhMCVVMCEFpjJPW2ctrfH4W+ZDeqFOIwDQYJYIZIAWUDBAIBBQAwCgYIKoZIzj0EAwIESDBGAiEA5FKVz0Y8\/2T3bs+J5goI175TNyjld1061FJjStNUZ5gCIQDEtKHmte0yhOb\/ZmneeMLTAMECQuNrVFBPBlbR\/wDctwAAAAAAAGhhdXRoRGF0YVikIFtPe86Im7d0vrlK52170PaOlVxPXbY4FDGQdSnXdSFAAAAAAGFwcGF0dGVzdGRldmVsb3AAIK5DooMRYp3hWHtwTCOmhjVR3S5aUGH59bFvziFwWJJepQECAyYgASFYIGXBKafHbMBJrKQ9EgdirPYxYtadNwb9kPD0ScYeC7dOIlgg+Jj3Lv9DMfkfg87nXdeM0Wc6y+f7JVSL5N3pDINadnQ=\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/MockAttestationService.swift",
-      "kind": "StringLiteral",
-      "offset": 7968,
-      "length": 190,
-      "value": "\"omlzaWduYXR1cmVYRzBFAiEA3vSq78VCMznGrqvia7BsbFLrf5ej9vDLxSqfoENqsUACIHo0ye4kxds3xhP0oZiXS8ZelA021bm+rcuEVhGWIcpVcWF1dGhlbnRpY2F0b3JEYXRhWCUgW097zoibt3S+uUrnbXvQ9o6VXE9dtjgUMZB1Kdd1IUAAAAAB\""
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/RetryDCAppAttestService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 490,
+      "length": 1,
+      "value": "3"
     }
   ]
 }

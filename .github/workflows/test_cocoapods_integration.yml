@@ -11,12 +11,12 @@ on:
 jobs:
 
   pods:
-    runs-on: macos-latest
+    runs-on: macos-12-xl
     steps:
-    - uses: actions/checkout@v2
-    - uses: n1hility/cancel-previous-runs@v2
+    - uses: actions/checkout@v4
+    - uses: n1hility/cancel-previous-runs@v3
       with:
-        token: ${{ secrets.MANUAL_ACTION_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Select latest Xcode
       uses: maxim-lobanov/setup-xcode@v1
