@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AdyenAuthentication-Swift.h</key>
 		<data>
-		EQ6leYk9WwYUQIgfG3yLncBI9NQ=
+		3LPQbL+nE5ASBtb3GvOVGktl0TQ=
 		</data>
 		<key>Headers/AdyenAuthentication.h</key>
 		<data>
@@ -14,55 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QzTNbYhTxkICiRUQrryCwzqxYCs=
+		yZSMmEQLuOSx+7Hzg8RniOl6Ioc=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/27AOkW7+avRsek8G8HqB6r+zYw=
+		BzWU3gXfbM6ext43+j0DxTYEiP0=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vpbWhsf/9DsjMroBFAthOBJbRFA=
+		yyFbjmPbu0BhP6+BhDFl/ZQTn9o=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6iFGhwgzFoGhJUOuTNyldzMUIPs=
+		3egeLKYxUUi+MB67l40Xp3/xXOQ=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vpbWhsf/9DsjMroBFAthOBJbRFA=
+		yyFbjmPbu0BhP6+BhDFl/ZQTn9o=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iZwh3taMuLO3KkCI0bEIE0rhuMw=
+		uBUXpfI5Y4IvTnkqqHufruS1ZbM=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/27AOkW7+avRsek8G8HqB6r+zYw=
+		9+24q9rsrjXQ8Svd+t6Yb+s6cO0=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		e4sL1FEoAWWaYbMevUEwbxB+jE4=
+		xVZH2ZKrsGEekm3t5R2UuwuSS58=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		f/v7XoUxnk2SPd+2mAITH8AzhC8=
+		6wqG/J3XiO09m0ri0UDuXsiYjOA=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		e4sL1FEoAWWaYbMevUEwbxB+jE4=
+		xVZH2ZKrsGEekm3t5R2UuwuSS58=
 		</data>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OfcV4zWbc0folIcMpIt5rbSCPZA=
+		S1dthlrs9zscxFNy72kw+SWeWRo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		4krzRS6YB8qcKskJpESFbNuImd4=
+		f1lxi499OfwFhge0aP5epmFLX+Y=
 		</data>
 		<key>README.md</key>
 		<data>
-		F6wcueM4iniILjYSMhQcrJa8BpY=
+		MIrE5f/HMKxqi35oNd4GpYMOCUU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -71,11 +71,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EQ6leYk9WwYUQIgfG3yLncBI9NQ=
+			3LPQbL+nE5ASBtb3GvOVGktl0TQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			+vHCGAXq9sL/EstCk2+QhT4LgEiCXsXn2NzXApRSPW4=
+			l3M/AUIHKhjEL3VqTnqTBMMzh74zJeEEEdhrTpxjbKE=
 			</data>
 		</dict>
 		<key>Headers/AdyenAuthentication.h</key>
@@ -93,132 +93,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/27AOkW7+avRsek8G8HqB6r+zYw=
+			BzWU3gXfbM6ext43+j0DxTYEiP0=
 			</data>
 			<key>hash2</key>
 			<data>
-			48M4zAs2ugNLZn1xP6KkJ4TPR+16ubpfOes7xPR/keE=
+			15n+HGZfIFzpGJm23Bn53Bremp+3TQfLY/7cTJKN0sw=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vpbWhsf/9DsjMroBFAthOBJbRFA=
+			yyFbjmPbu0BhP6+BhDFl/ZQTn9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			cibRiUbo/VBZqLmJIJV2vkW15RYDMcsfd6UYLEO1z9I=
+			qbA+cLAjsvgJRDRjTbn6AY5SJnS65RpwdtFd/DstHQM=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6iFGhwgzFoGhJUOuTNyldzMUIPs=
+			3egeLKYxUUi+MB67l40Xp3/xXOQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			u/R/D44vYfqdCdOs7EUYfe+EtzWfzSlm6pTHabAFPUQ=
+			ycy9N4kKT41xlHgrgIqDWNEyq5XmoYHmlPDrTaAJuU4=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vpbWhsf/9DsjMroBFAthOBJbRFA=
+			yyFbjmPbu0BhP6+BhDFl/ZQTn9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			cibRiUbo/VBZqLmJIJV2vkW15RYDMcsfd6UYLEO1z9I=
+			qbA+cLAjsvgJRDRjTbn6AY5SJnS65RpwdtFd/DstHQM=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iZwh3taMuLO3KkCI0bEIE0rhuMw=
+			uBUXpfI5Y4IvTnkqqHufruS1ZbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			QmI9tu8YJGBkHKB3mobC0/RVu/FgDwfh8Rr9b4m1giI=
+			LsyMo/tKacJ6pQdGBPP5BA2EOYddnZUNvIEDwkI8xF4=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/27AOkW7+avRsek8G8HqB6r+zYw=
+			9+24q9rsrjXQ8Svd+t6Yb+s6cO0=
 			</data>
 			<key>hash2</key>
 			<data>
-			48M4zAs2ugNLZn1xP6KkJ4TPR+16ubpfOes7xPR/keE=
+			VOn3eKzJIYxND0euLUBszLLhDZFkf9fgnEmLrPDXzHQ=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e4sL1FEoAWWaYbMevUEwbxB+jE4=
+			xVZH2ZKrsGEekm3t5R2UuwuSS58=
 			</data>
 			<key>hash2</key>
 			<data>
-			tmR2jFGe7q9b3UBFJNrkH3EnXji82e2r4TnhwPBKWz4=
+			xVmiv/esBxbLceLbf8B+jau76CJGxy/xVaCVoNFLexY=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f/v7XoUxnk2SPd+2mAITH8AzhC8=
+			6wqG/J3XiO09m0ri0UDuXsiYjOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			kdNhQSvb9og3kARoIoNjp8Dyf4f08Z7Xp7RB67uUo/A=
+			Zru+ilYfwFD8uzy7HJ3adjANnP9+zbUDz6m8cocU/K4=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e4sL1FEoAWWaYbMevUEwbxB+jE4=
+			xVZH2ZKrsGEekm3t5R2UuwuSS58=
 			</data>
 			<key>hash2</key>
 			<data>
-			tmR2jFGe7q9b3UBFJNrkH3EnXji82e2r4TnhwPBKWz4=
+			xVmiv/esBxbLceLbf8B+jau76CJGxy/xVaCVoNFLexY=
 			</data>
 		</dict>
 		<key>Modules/AdyenAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OfcV4zWbc0folIcMpIt5rbSCPZA=
+			S1dthlrs9zscxFNy72kw+SWeWRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			3sG15YU22zgP6XpQkxu3Zsrepeiad/7zSX6YkQiGd1g=
+			8PkYqDrDzEKEV5OsBiUaqvG/M07v5h7HlWQqPeAz0tg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4krzRS6YB8qcKskJpESFbNuImd4=
+			f1lxi499OfwFhge0aP5epmFLX+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			G/BndLOA6reXr3G6MiFDsPbtVTydXVd7P84S5UAl6c0=
+			wEjHV+XdUuk7etyi5WDw7822I5Sg2ZVdnE9zOJ69ZBg=
 			</data>
 		</dict>
 		<key>README.md</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F6wcueM4iniILjYSMhQcrJa8BpY=
+			MIrE5f/HMKxqi35oNd4GpYMOCUU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xAg8fsYfbqjW2+xwKcnBWg9nMWIxp6zO4JWN41CBamc=
+			iqcWoriPoHoRwLP4eHZMb5Z7hQ9ocnUbLkto6hQc3MQ=
 			</data>
 		</dict>
 	</dict>

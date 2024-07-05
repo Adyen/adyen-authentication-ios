@@ -1,7 +1,7 @@
 framework module AdyenAuthentication {
   umbrella header "AdyenAuthentication.h"
-
   export *
+
   module * { export * }
 }
 

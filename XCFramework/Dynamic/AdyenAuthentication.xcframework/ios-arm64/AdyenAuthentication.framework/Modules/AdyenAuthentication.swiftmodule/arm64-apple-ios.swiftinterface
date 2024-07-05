@@ -1,8 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AdyenAuthentication
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AdyenAuthentication
 @_exported import AdyenAuthentication
+import AuthenticationServices
 import CommonCrypto
 import DeviceCheck
 import Foundation
@@ -12,10 +12,13 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers @available(iOS 14.0, *)
 final public class AuthenticationService : AdyenAuthentication.AuthenticationServiceProtocol {
-  public typealias Configuration = AdyenAuthentication.DeviceLocalConfiguration
+  public typealias Configuration = AdyenAuthentication.DeviceCheckConfiguration
   public init(configuration: AdyenAuthentication.AuthenticationService.Configuration)
+  @available(iOS 16.0, *)
+  public init(passKeyConfiguration: AdyenAuthentication.PassKeyConfiguration)
   #if compiler(>=5.3) && $AsyncAwait
   final public func isDeviceRegistered(withAuthenticationInput input: Swift.String) async throws -> Swift.Bool
   #endif
@@ -35,7 +38,7 @@ final public class AuthenticationService : AdyenAuthentication.AuthenticationSer
   final public func reset() throws
   @objc deinit
 }
-public struct DeviceLocalConfiguration {
+public struct DeviceCheckConfiguration {
   public let localizedRegistrationReason: Swift.String
   public let localizedAuthenticationReason: Swift.String
   public let appleTeamIdentifier: Swift.String
@@ -73,6 +76,8 @@ extension AdyenAuthentication.AuthenticationServiceProtocol {
 }
 public enum AdyenAuthenticationError : Foundation.LocalizedError {
   case unknown
+  case userCancelled
+  case noStoredCredentialsExist
   case noStoredCredentialsMatch((any Swift.Error)?)
   case credentialsStoreFailure(any Swift.Error)
   case currentDeviceIsNotSupported
@@ -90,6 +95,9 @@ public enum AdyenAuthenticationError : Foundation.LocalizedError {
 public protocol DeviceSupportCheckerProtocol {
   var isDeviceSupported: Swift.Bool { get }
   func checkSupport() throws -> Swift.String
+}
+public struct PassKeyConfiguration {
+  public init(relyingPartyIdentifier: Swift.String, displayName: Swift.String, presentationContextWindow: UIKit.UIWindow = UIApplication.shared.keyWindow!)
 }
 @available(iOS 14.0, *)
 public struct DeviceSupportChecker : AdyenAuthentication.DeviceSupportCheckerProtocol {
