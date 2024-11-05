@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AdyenAuthentication",
+    "printedName": "AdyenAuthentication",
     "children": [
       {
         "kind": "Import",
@@ -399,6 +399,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "AuthenticationServiceProtocol",
             "printedName": "AuthenticationServiceProtocol",
             "usr": "s:19AdyenAuthentication0B15ServiceProtocolP",
@@ -652,6 +666,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1360,6 +1390,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DeviceSupportCheckerProtocol",
             "printedName": "DeviceSupportCheckerProtocol",
             "usr": "s:19AdyenAuthentication28DeviceSupportCheckerProtocolP",
@@ -1585,6 +1629,66 @@
             "declKind": "EnumElement",
             "usr": "s:19AdyenAuthentication0aB5ErrorO13userCancelledyA2CmF",
             "mangledName": "$s19AdyenAuthentication0aB5ErrorO13userCancelledyA2CmF",
+            "moduleName": "AdyenAuthentication",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "consecutiveCancellationOnApproval",
+            "printedName": "consecutiveCancellationOnApproval",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdyenAuthentication.AdyenAuthenticationError.Type) -> (Swift.Int) -> AdyenAuthentication.AdyenAuthenticationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> AdyenAuthentication.AdyenAuthenticationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdyenAuthenticationError",
+                        "printedName": "AdyenAuthentication.AdyenAuthenticationError",
+                        "usr": "s:19AdyenAuthentication0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(count: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdyenAuthentication.AdyenAuthenticationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdyenAuthenticationError",
+                        "printedName": "AdyenAuthentication.AdyenAuthenticationError",
+                        "usr": "s:19AdyenAuthentication0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19AdyenAuthentication0aB5ErrorO33consecutiveCancellationOnApprovalyACSi_tcACmF",
+            "mangledName": "$s19AdyenAuthentication0aB5ErrorO33consecutiveCancellationOnApprovalyACSi_tcACmF",
             "moduleName": "AdyenAuthentication",
             "declAttributes": [
               "RawDocComment"
@@ -2193,6 +2297,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LocalizedError",
             "printedName": "LocalizedError",
             "usr": "s:10Foundation14LocalizedErrorP",
@@ -2308,6 +2426,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2338,7 +2472,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(relyingPartyIdentifier:displayName:presentationContextWindow:)",
+            "printedName": "init(relyingPartyIdentifier:displayName:consecutiveApprovalCancellationsLimit:presentationContextWindow:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2360,6 +2494,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "UIWindow",
                 "printedName": "UIKit.UIWindow",
                 "hasDefaultArg": true,
@@ -2367,8 +2516,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19AdyenAuthentication20PassKeyConfigurationV22relyingPartyIdentifier11displayName25presentationContextWindowACSS_SSSo8UIWindowCtcfc",
-            "mangledName": "$s19AdyenAuthentication20PassKeyConfigurationV22relyingPartyIdentifier11displayName25presentationContextWindowACSS_SSSo8UIWindowCtcfc",
+            "usr": "s:19AdyenAuthentication20PassKeyConfigurationV22relyingPartyIdentifier11displayName37consecutiveApprovalCancellationsLimit25presentationContextWindowACSS_SSSiSgSo8UIWindowCtcfc",
+            "mangledName": "$s19AdyenAuthentication20PassKeyConfigurationV22relyingPartyIdentifier11displayName37consecutiveApprovalCancellationsLimit25presentationContextWindowACSS_SSSiSgSo8UIWindowCtcfc",
             "moduleName": "AdyenAuthentication",
             "declAttributes": [
               "AccessControl",
@@ -2384,6 +2533,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2517,6 +2682,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DeviceSupportCheckerProtocol",
             "printedName": "DeviceSupportCheckerProtocol",
             "usr": "s:19AdyenAuthentication28DeviceSupportCheckerProtocolP",
@@ -2574,6 +2753,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2650,6 +2843,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2696,6 +2903,35 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Observable",
+            "printedName": "Observable",
+            "usr": "s:11Observation10ObservableP",
+            "mangledName": "$s11Observation10ObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
           }
         ]
       }
@@ -2704,217 +2940,147 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/SerialOperationAttestationService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/SerialOperationAttestationService.swift",
       "kind": "Array",
       "offset": 985,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeySystemAuthenticator.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 26,
-      "value": "\"AdyenAuthentication.PassKeySystemAuthenticator\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Serial Operation Service\/SerialOperationAuthenticationService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Serial Operation Service\/SerialOperationAuthenticationService.swift",
       "kind": "Array",
       "offset": 939,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
       "offset": 1417,
       "length": 11,
       "value": "\"challenge\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
       "offset": 1475,
       "length": 23,
       "value": "\"registeredCredentials\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
-      "kind": "StringLiteral",
-      "offset": 1417,
-      "length": 11,
-      "value": "\"challenge\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
-      "kind": "StringLiteral",
-      "offset": 1475,
-      "length": 23,
-      "value": "\"registeredCredentials\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
       "kind": "StringLiteral",
       "offset": 2343,
       "length": 11,
       "value": "\"challenge\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceInput.swift",
-      "kind": "StringLiteral",
-      "offset": 2343,
-      "length": 11,
-      "value": "\"challenge\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "IntegerLiteral",
       "offset": 887,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
       "offset": 1799,
       "length": 12,
       "value": "\"clientData\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
       "offset": 1850,
       "length": 6,
       "value": "\"rpId\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 1799,
-      "length": 12,
-      "value": "\"clientData\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 1850,
-      "length": 6,
-      "value": "\"rpId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "IntegerLiteral",
       "offset": 3394,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
       "offset": 4964,
       "length": 12,
       "value": "\"clientData\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
       "offset": 5044,
       "length": 14,
       "value": "\"credentialId\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
       "kind": "StringLiteral",
       "offset": 5097,
       "length": 6,
       "value": "\"rpId\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeyAuthenticationService.swift",
       "kind": "StringLiteral",
-      "offset": 4964,
-      "length": 12,
-      "value": "\"clientData\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 5044,
-      "length": 14,
-      "value": "\"credentialId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Input and Output\/AuthenticationServiceOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 5097,
-      "length": 6,
-      "value": "\"rpId\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeyAuthenticationService.swift",
-      "kind": "StringLiteral",
-      "offset": 2194,
+      "offset": 2980,
       "length": 50,
       "value": "\"AdyenAuthentication.credentialIdentifier.passKey\""
     },
     {
-      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "filePath": "@__swiftmacro_19AdyenAuthentication0039PassKeyAuthenticationServiceswift_jrGEmfMX59_62_9obfuscatefMf_.swift",
       "kind": "StringLiteral",
       "offset": 0,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "filePath": "@__swiftmacro_19AdyenAuthentication0039PassKeyAuthenticationServiceswift_jrGEmfMX59_62_9obfuscatefMf_.swift",
       "kind": "StringLiteral",
       "offset": 5,
-      "length": 517,
+      "length": 504,
       "value": "\"\""
     },
     {
-      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "filePath": "@__swiftmacro_19AdyenAuthentication0039PassKeyAuthenticationServiceswift_jrGEmfMX59_62_9obfuscatefMf_.swift",
       "kind": "Array",
       "offset": 26,
-      "length": 226,
-      "value": "[199, 179, 207, 252, 27, 53, 189, 136, 212, 185, 242, 53, 107, 175, 117, 140, 181, 241, 150, 6, 125, 193, 65, 55, 221, 107, 105, 117, 149, 187, 111, 94, 18, 176, 143, 10, 239, 179, 25, 237, 228, 109, 48, 108, 175, 39, 27, 157]"
+      "length": 215,
+      "value": "[179, 225, 86, 162, 246, 99, 81, 195, 176, 221, 237, 80, 94, 56, 174, 70, 85, 100, 66, 88, 127, 9, 183, 24, 12, 8, 159, 124, 102, 71, 115, 194, 211, 213, 219, 92, 249, 45, 198, 173, 210, 4, 242, 159, 233, 1, 127, 0]"
     },
     {
-      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "filePath": "@__swiftmacro_19AdyenAuthentication0039PassKeyAuthenticationServiceswift_jrGEmfMX59_62_9obfuscatefMf_.swift",
       "kind": "Array",
-      "offset": 254,
-      "length": 222,
-      "value": "[134, 215, 182, 153, 117, 116, 200, 252, 188, 220, 156, 65, 2, 204, 20, 248, 220, 158, 248, 40, 30, 179, 36, 83, 184, 5, 29, 28, 244, 215, 38, 58, 119, 222, 251, 99, 137, 218, 124, 159, 202, 29, 81, 31, 220, 108, 126, 228]"
+      "offset": 243,
+      "length": 220,
+      "value": "[242, 133, 47, 199, 152, 34, 36, 183, 216, 184, 131, 36, 55, 91, 207, 50, 60, 11, 44, 118, 28, 123, 210, 124, 105, 102, 235, 21, 7, 43, 58, 166, 182, 187, 175, 53, 159, 68, 163, 223, 252, 116, 147, 236, 154, 74, 26, 121]"
     },
     {
-      "filePath": "@__swiftmacro_19AdyenAuthentication07PassKeyB7ServiceC9obfuscatefMf_.swift",
+      "filePath": "@__swiftmacro_19AdyenAuthentication0039PassKeyAuthenticationServiceswift_jrGEmfMX59_62_9obfuscatefMf_.swift",
       "kind": "StringLiteral",
-      "offset": 521,
+      "offset": 508,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeyAuthenticationService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeyAuthenticationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3570,
+      "offset": 4751,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/Authentication Service\/Core Service Implementations\/Passkey Service\/PassKeyAuthenticationService.swift",
-      "kind": "StringLiteral",
-      "offset": 1874,
-      "length": 28,
-      "value": "\"AdyenAuthentication.PassKeyAuthenticationService\""
-    },
-    {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/MockAttestationService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/MockAttestationService.swift",
       "kind": "BooleanLiteral",
       "offset": 301,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/Release3ds2\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/RetryDCAppAttestService.swift",
+      "filePath": "\/Users\/robertd\/Desktop\/Workspace\/Projects\/3ds2sdk\/adyen-3ds2-ios\/AdyenAuthentication\/AttestationService\/RetryDCAppAttestService.swift",
       "kind": "IntegerLiteral",
       "offset": 490,
       "length": 1,
