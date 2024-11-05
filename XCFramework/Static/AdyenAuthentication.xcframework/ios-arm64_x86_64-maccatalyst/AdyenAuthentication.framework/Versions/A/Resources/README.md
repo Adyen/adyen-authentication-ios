@@ -54,7 +54,8 @@ self.authenticationService =  AuthenticationService(configuration: configuration
 ```Swift
 let configuration = AuthenticationService.PassKeyConfiguration(
                     relyingPartyIdentifier: "com.example.com",
-                    displayName: "App name"
+                    displayName: "App name",
+                    consecutiveApprovalCancellationsLimit: Int?
                 )
 self.authenticationService = AuthenticationService(configuration: configuration)
 ```
