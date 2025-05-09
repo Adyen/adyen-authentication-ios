@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 jobs:
 
   Deploy:
-    runs-on: macos-12
+    runs-on: macos-14
     steps:
     - uses: actions/checkout@v2
     - uses: n1hility/cancel-previous-runs@v2
@@ -20,6 +20,7 @@ jobs:
       id: get-current-marketing-version
       run: |
         version=$(sed -n "s/version.*=.*'\(.*\)'/\1/p" AdyenAuthentication.podspec)
+        echo "[INFO] Extracted version: $version"
         echo "MARKETING_VERSION=$version" >> "$GITHUB_OUTPUT"
 
     - name: Deploy to current version 🚀
