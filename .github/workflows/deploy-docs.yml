@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 jobs:
 
   Deploy:
-    runs-on: macos-12
+    runs-on: macos-14
     steps:
     - uses: actions/checkout@v2
     - uses: n1hility/cancel-previous-runs@v2
@@ -17,8 +17,11 @@ jobs:
         xcode-version: latest-stable
 
     - name: Set current marketing version
-      run: echo "::set-output name=MARKETING_VERSION::$(cat AdyenAuthentication.podspec | sed -n "s/version.*=.*\'\(.*\)\'/\1/p")"
       id: get-current-marketing-version
+      run: |
+        version=$(sed -n "s/version.*=.*'\(.*\)'/\1/p" AdyenAuthentication.podspec)
+        echo "[INFO] Extracted version: $version"
+        echo "MARKETING_VERSION=$version" >> "$GITHUB_OUTPUT"
 
     - name: Deploy to current version 🚀
       uses: peaceiris/actions-gh-pages@v3
