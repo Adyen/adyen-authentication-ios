@@ -8,12 +8,15 @@ on:
     branches:
     - master
 
+permissions:
+  contents: read
+
 jobs:
 
   pods:
-    runs-on: macos-12-xl
+    runs-on: macos-15-xlarge
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: n1hility/cancel-previous-runs@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -21,11 +24,14 @@ jobs:
     - name: Select latest Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: latest-stable
+        xcode-version: '16.4'
 
     - name: Lint Cocoapods
       run: |
-        gem install cocoapods
+        brew update
+        brew install xcodegen
+        
+        gem install cocoapods -v 1.10.2
         pod repo update
         pod lib lint AdyenAuthentication.podspec --allow-warnings --verbose
 
