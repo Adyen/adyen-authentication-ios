@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AdyenAuthentication
+// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name AdyenAuthentication
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import AdyenAuthentication
 import AuthenticationServices
@@ -28,20 +28,20 @@ final public class AuthenticationService : AdyenAuthentication.AuthenticationSer
     get
   }
   final public func checkSupport() throws -> Swift.String
-  final public func reset() throws
+  final public func reset() async throws
   @objc deinit
 }
-public struct DeviceCheckConfiguration {
+public struct DeviceCheckConfiguration : Swift.Sendable {
   public let localizedRegistrationReason: Swift.String
   public let localizedAuthenticationReason: Swift.String
   public let appleTeamIdentifier: Swift.String
   public init(localizedRegistrationReason: Swift.String, localizedAuthenticationReason: Swift.String, appleTeamIdentifier: Swift.String)
 }
 public protocol AuthenticationServiceProtocol : AnyObject, AdyenAuthentication.DeviceSupportCheckerProtocol {
-  func isDeviceRegistered(withAuthenticationInput input: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  func registeredCredentials(withAuthenticationInput input: Swift.String, completion: @escaping (Swift.Result<[Swift.String], any Swift.Error>) -> Swift.Void)
-  func authenticate(withAuthenticationInput input: Swift.String, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
-  func register(withRegistrationInput input: Swift.String, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  func isDeviceRegistered(withAuthenticationInput input: Swift.String, completion: @escaping @Sendable (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  func registeredCredentials(withAuthenticationInput input: Swift.String, completion: @escaping @Sendable (Swift.Result<[Swift.String], any Swift.Error>) -> Swift.Void)
+  func authenticate(withAuthenticationInput input: Swift.String, completion: @escaping @Sendable (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  func register(withRegistrationInput input: Swift.String, completion: @escaping @Sendable (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
   @available(iOS 13.0.0, *)
   func isDeviceRegistered(withAuthenticationInput input: Swift.String) async throws -> Swift.Bool
   @available(iOS 13.0.0, *)
@@ -50,14 +50,15 @@ public protocol AuthenticationServiceProtocol : AnyObject, AdyenAuthentication.D
   func authenticate(withAuthenticationInput input: Swift.String) async throws -> Swift.String
   @available(iOS 13.0.0, *)
   func register(withRegistrationInput input: Swift.String) async throws -> Swift.String
-  func reset() throws
+  @available(iOS 13.0.0, *)
+  func reset() async throws
 }
 @available(iOS 13.0, *)
 extension AdyenAuthentication.AuthenticationServiceProtocol {
-  public func isDeviceRegistered(withAuthenticationInput input: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  public func registeredCredentials(withAuthenticationInput input: Swift.String, completion: @escaping (Swift.Result<[Swift.String], any Swift.Error>) -> Swift.Void)
-  public func register(withRegistrationInput input: Swift.String, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
-  public func authenticate(withAuthenticationInput input: Swift.String, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  public func isDeviceRegistered(withAuthenticationInput input: Swift.String, completion: @escaping @Sendable (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  public func registeredCredentials(withAuthenticationInput input: Swift.String, completion: @escaping @Sendable (Swift.Result<[Swift.String], any Swift.Error>) -> Swift.Void)
+  public func register(withRegistrationInput input: Swift.String, completion: @escaping @Sendable (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  public func authenticate(withAuthenticationInput input: Swift.String, completion: @escaping @Sendable (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
 }
 public enum AdyenAuthenticationError : Foundation.LocalizedError {
   case unknown
@@ -78,12 +79,12 @@ public enum AdyenAuthenticationError : Foundation.LocalizedError {
     get
   }
 }
-public protocol DeviceSupportCheckerProtocol {
+public protocol DeviceSupportCheckerProtocol : Swift.Sendable {
   var isDeviceSupported: Swift.Bool { get }
   func checkSupport() throws -> Swift.String
 }
-public struct PassKeyConfiguration {
-  public init(relyingPartyIdentifier: Swift.String, displayName: Swift.String, consecutiveApprovalCancellationsLimit: Swift.Int? = nil, presentationContextWindow: UIKit.UIWindow = UIApplication.shared.keyWindow!)
+public struct PassKeyConfiguration : Swift.Sendable {
+  @_Concurrency.MainActor public init(relyingPartyIdentifier: Swift.String, displayName: Swift.String, consecutiveApprovalCancellationsLimit: Swift.Int? = nil, presentationContextWindow: UIKit.UIWindow = UIApplication.shared.keyWindow!)
 }
 @available(iOS 14.0, *)
 public struct DeviceSupportChecker : AdyenAuthentication.DeviceSupportCheckerProtocol {
