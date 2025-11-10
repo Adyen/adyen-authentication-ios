@@ -1,140 +1,195 @@
 # AdyenAuthentication iOS SDK
 
-AdyenAuthentication SDK Provides reusable and easy to use two factor authentication for security sensitive use cases like banking, issuing and PSD2 strong customer authentication.
+The **AdyenAuthentication SDK** provides reusable, secure, and easy-to-integrate two-factor authentication for sensitive use cases such as banking, issuing, and PSD2 strong customer authentication.
 
-## Installation
 
-The SDK is available via [CocoaPods](http://cocoapods.org), [Carthage](https://github.com/Carthage/Carthage), [Swift Package Manager](https://www.swift.org/package-manager/) or via manual installation.
+## ⚙️ Installation
+
+The SDK can be integrated via [CocoaPods](http://cocoapods.org), [Carthage](https://github.com/Carthage/Carthage), [Swift Package Manager](https://www.swift.org/package-manager/), or manual installation.
 
 ### CocoaPods
 
-1. Add `pod 'AdyenAuthentication'` to your `Podfile`.
-2. Run `pod install`.
+1. Add the following line to your `Podfile`:
+   ```ruby
+   pod 'AdyenAuthentication'
+   ```
 
 ### Carthage
 
-1. Add `github "adyen/adyen-authentication-ios"` to your `Cartfile`.
-2. Run `carthage update`.
-3. Link the framework with your target as described in [Carthage Readme](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
+> **Note:** Carthage is no longer actively maintained and is not recommended for new projects. Prefer Swift Package Manager if possible.
 
-### Dynamic xcFramework
+1. Add the following to your `Cartfile`:
+   ```text
+   github "adyen/adyen-authentication-ios"
+   ```
+2. Link the generated framework with your target as described in [Carthage’s guide](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
 
-Drag the dynamic `XCFramework/Dynamic/AdyenAuthentication.xcframework` to the `Frameworks, Libraries, and Embedded Content` section in your general target settings. Select "Copy items if needed" when asked.
+### Swift Package Manager (Recommended)
 
-### Static xcFramework
+1. Follow Apple’s guide on [Adding Package Dependencies to Your App](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
+2. Use the repository URL:  
+   `https://github.com/Adyen/adyen-authentication-ios`
 
-1. Drag the static `XCFramework/Static/AdyenAuthentication.xcframework` to the `Frameworks, Libraries, and Embedded Content` section in your general target settings.
-2. Make sure the static `AdyenAuthentication.xcframework` is not embedded.
+**Requirements:**  
+- Swift 5.7+  
+- Xcode 16+  
+- iOS 14 or later for DeviceCheck
+- iOS 16 or later for passkeys.
 
-### Swift Package Manager
+### XCFramework Installation
 
-1. Follow Apple's [Adding Package Dependencies to Your App](
-https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app
-) guide on how to add a Swift Package dependency.
-2. Use `https://github.com/Adyen/adyen-authentication-ios` as the repository URL.
-3. Specify the version to be at least `1.0.0`.
+#### Dynamic xcFramework
+1. Drag `XCFramework/Dynamic/AdyenAuthentication.xcframework` into the **Frameworks, Libraries, and Embedded Content** section of your app target.
+2. Choose **“Copy items if needed.”**
 
-## Usage
+#### Static xcFramework
+1. Drag `XCFramework/Static/AdyenAuthentication.xcframework` into the **Frameworks, Libraries, and Embedded Content** section.
+2. Ensure the framework is **not embedded**.
+---
 
-### Initialization
+## 🔑 Prerequisites
 
-There are two configuration options. 
+Before using the AdyenAuthentication SDK, configure your Xcode project with the required Apple capabilities.
 
-1. Using device check apis
+| Authentication Method | Required Capability | Documentation |
+|-----------------------|---------------------|---------------|
+| DeviceCheck | DeviceCheck + App Attest | [Preparing to Use the App Attest Service](https://developer.apple.com/documentation/devicecheck/preparing-to-use-the-app-attest-service) |
+| Passkeys | Associated Domains | [Supporting Passkeys](https://developer.apple.com/documentation/authenticationservices/supporting-passkeys) |
 
-```Swift
-let configuration = AuthenticationService.Configuration(localizedRegistrationReason: // Text explaining to the user why we need their biometrics while registration,
-                                                        localizedAuthenticationReason: // Text explaining to the user why we need their biometrics while authentication.
-                                                        appleTeamIdentifier: // The Apple registered development team identifier.)
-self.authenticationService =  AuthenticationService(configuration: configuration)
+### DeviceCheck
+
+1. Enable **App Attest** capability in your app target.
+2. Add the following to your `.entitlements` file:
+
+   ```xml
+   <key>com.apple.developer.devicecheck.appattest-environment</key>
+   <string>production</string>
+   ```
+
+> Use `production` for live environments. For sandbox testing, configure appropriately.
+
+### Passkeys
+
+1. Enable **Associated Domains** capability.
+2. Add your domain using the `webcredentials` service:
+
+   ```
+   webcredentials:your-domain.com
+   ```
+
+> Ensure your `relyingPartyIdentifier` in code **matches the associated domain** declared here.
+
+---
+
+## 🧩 Usage
+
+### Initialization Options
+
+You can initialize the SDK in one of two mutually exclusive ways:
+
+#### 1. Using DeviceCheck APIs
+
+```swift
+let configuration = AuthenticationService.Configuration(
+    localizedRegistrationReason: "Biometric use explanation for registration.",
+    localizedAuthenticationReason: "Biometric use explanation for authentication.",
+    appleTeamIdentifier: "YOUR_APPLE_TEAM_ID"
+)
+let authenticationService = AuthenticationService(configuration: configuration)
 ```
 
-2. Using Apple passkeys
+Ensure the **App Attest** capability and **App Attest entitlement** are configured.
 
-```Swift
+#### 2. Using Apple Passkeys
+
+```swift
 let configuration = AuthenticationService.PassKeyConfiguration(
-                    relyingPartyIdentifier: "com.example.com",
-                    displayName: "App name",
-                    consecutiveApprovalCancellationsLimit: Int?
-                )
-self.authenticationService = AuthenticationService(configuration: configuration)
+    relyingPartyIdentifier: "your-domain.com",
+    displayName: "Your App Name",
+    consecutiveApprovalCancellationsLimit: 3 // Optional: refer AdyenAuthenticationError.consecutiveCancellationOnApproval
+)
+let authenticationService = AuthenticationService(passKeyConfiguration: configuration)
 ```
 
+Ensure the **Associated Domains** capability is enabled and your `webcredentials` entry matches the relying party domain.
 
-### Check Device support
+---
 
-```Swift
-let deviceSupport: String = try authenticationService.checkSupport()
-```
+### Checking Device Support
 
-This call will throw an error in case the current device is not supported, otherwise returns an opaque string payload that needs to be sent to backend API depending on the use case.
-
-### Check whether Device is registered
-
-```Swift
-authenticationService.isDeviceRegistered(withAuthenticationInput: input /*The opaque string sdk input*/) { [weak self] result in
-    switch result {
-    case let .success(isRegistered):
-        /// output is a Boolean indicating whether the current device is registered,
-        /// then you can call `authenticate` function below.
-    case let .failure(error):
-        /// Error raised,
-        /// for example if the device is not protected by either pass code, face Id, or fingerprint, or if device is not registered,
-        /// then you can call `register` function below.
-    }
+```swift
+do {
+    let deviceSupportPayload = try authenticationService.checkSupport()
+    // Send this payload to your backend for validation.
+} catch {
+    print("Device not supported: \(error)") // `AdyenAuthenticationError` if not supported.  
 }
-
-// OR you can also use the async version of this function:
-
-let isDeviceRegistered = try await authenticationService.isDeviceRegistered(withAuthenticationInput: input /*The opaque string sdk input*/)
 ```
 
-### For first time registration:
+If successful, `checkSupport()` returns a Base64 URL-encoded payload describing device capabilities.
 
-```Swift
-authenticationService.register(withRegistrationInput: input /*The opaque string sdk input*/) { [weak self] result in
-    switch result {
-    case let .success(output):
-        /// output is an opaque string that should be sent to Adyen backend API (depending on the use case) to be validated for registration to be finalized.
-    case let .failure(error):
-        /// Failure to register the device, for example if the device is not protected by either pass code, face Id, or fingerprint.
-    }
+---
+
+### Registering and Authenticating
+
+#### Check Registration Status
+
+```swift
+do {
+    let isDeviceRegistered = try await authenticationService.isDeviceRegistered(withAuthenticationInput: backendInput) /*The opaque string sdk input*/
+} catch error {
+    // refer: `AdyenAuthenticationError` for the type of errors.
 }
-
-// OR you can also use the async version of this function:
-
-let sdkOutput = try await authenticationService.register(withRegistrationInput: input /*The opaque string sdk input*/)
 ```
 
-### For authentication:
+#### Register Device
 
-```Swift
-authenticationService.authenticate(withAuthenticationInput: input /*The opaque string sdk input*/) { result in
-    switch result {
-    case let .success(output):
-        /// output is an opaque string that should be sent to Adyen backend API (depending on the use case) to be validated for authentication to be finalized.
-    case let .failure(error):
-        /// Failure to authenticate, which usually means that the current account is not registered.
-    }
+```swift
+do {
+    let sdkOutput = try await authenticationService.register(withRegistrationInput: backendInput) /*The opaque string sdk input*/
+} catch error {
+    // refer: `AdyenAuthenticationError` for the type of errors.
 }
-
-// OR you can also use the async version of this function:
-
-let sdkOutput = try await authenticationService.authenticate(withAuthenticationInput: input /*The opaque string sdk input*/)
 ```
 
-## Support
+#### Authenticate User
 
-If you have a feature request, or spotted a bug or a technical problem, [create an issue here](https://github.com/Adyen/adyen-authentication-ios/issues/new/choose).
 
-For other questions, [contact our support team](https://support.adyen.com/hc/en-us/requests/new?ticket_form_id=360000705420).
+```swift
+do {
+    let sdkOutput = try await authenticationService.authenticate(withAuthenticationInput: backendInput) /*The opaque string sdk input*/
+} catch error {
+    // refer: `AdyenAuthenticationError` for the type of errors.
+}
+```
 
-## See also
+## 🧠 Error Handling
 
- * [Reporting security issues](https://www.adyen.help/hc/en-us/articles/115001187330-How-do-I-report-a-possible-security-issue-to-Adyen-).
- * [Security best practices](https://docs.adyen.com/online-payments/classic-integrations/api-integration-ecommerce/3d-secure/native-3ds2/ios-sdk-integration/security-best-practices).
- * [Data security at Adyen](https://docs.adyen.com/development-resources/adyen-data-security).
+Common `AuthenticationService.Error` cases includes:
+- `.userCancelled` // User cancelled authentication
+- `.deviceOwnerAuthenticationFailure` // Indicates that device owner authentication failed.
 
-## License
 
-This SDK is available under the Apache License, Version 2.0. For more information, see the [LICENSE](https://github.com/Adyen/adyen-3ds2-ios/blob/master/LICENSE) file.
+For more such errors refer to the [source documentation](https://adyen.github.io/adyen-authentication-ios/).
+
+---
+
+## 🧩 Support
+
+If you encounter a bug or have a feature request, [open an issue](https://github.com/Adyen/adyen-authentication-ios/issues/new/choose).  
+For other questions, [contact Adyen Support](https://support.adyen.com/hc/en-us/requests/new?ticket_form_id=360000705420).
+
+---
+
+## 🔒 See Also
+
+- [Reporting security issues](https://www.adyen.help/hc/en-us/articles/115001187330-How-do-I-report-a-possible-security-issue-to-Adyen-)  
+- [Security best practices](https://docs.adyen.com/online-payments/classic-integrations/api-integration-ecommerce/3d-secure/native-3ds2/ios-sdk-integration/security-best-practices)  
+- [Data security at Adyen](https://docs.adyen.com/development-resources/adyen-data-security)
+
+---
+
+## 📜 License
+
+This SDK is available under the **Apache License, Version 2.0**.  
+See the [LICENSE](https://github.com/Adyen/adyen-authentication-ios/blob/master/LICENSE) file for details.
