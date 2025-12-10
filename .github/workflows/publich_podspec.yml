@@ -3,6 +3,8 @@ on: [workflow_dispatch]
 jobs:
 
   publish:
+    permissions:
+      contents: read
     runs-on: macos-14
     steps:
     - uses: actions/checkout@v5
