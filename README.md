@@ -45,7 +45,15 @@ The SDK can be integrated via [CocoaPods](http://cocoapods.org), [Carthage](http
 #### Static xcFramework
 1. Drag `XCFramework/Static/AdyenAuthentication.xcframework` into the **Frameworks, Libraries, and Embedded Content** section.
 2. Ensure the framework is **not embedded**.
----
+
+## 📱 Supported App Targets
+
+| Authentication Method | iOS App | App Extension | Documentation |
+| :--- | :---: | :---: | :--- |
+| **DeviceCheck** | ✅ Supported | ❌ Not Supported | [App Attest](https://developer.apple.com/documentation/devicecheck/) |
+| **Passkeys** | ✅ Supported | ⚠️ Conditional | [ASAuthorizationController](https://developer.apple.com/documentation/authenticationservices/asauthorizationcontroller) |
+
+For App Extensions, Passkeys require [ASAuthorizationControllerPresentationContextProviding](https://developer.apple.com/documentation/authenticationservices/asauthorizationcontrollerpresentationcontextproviding).
 
 ## 🔑 Prerequisites
 
@@ -55,6 +63,7 @@ Before using the AdyenAuthentication SDK, configure your Xcode project with the 
 |-----------------------|---------------------|---------------|
 | DeviceCheck | DeviceCheck + App Attest | [Preparing to Use the App Attest Service](https://developer.apple.com/documentation/devicecheck/preparing-to-use-the-app-attest-service) |
 | Passkeys | Associated Domains | [Supporting Passkeys](https://developer.apple.com/documentation/authenticationservices/supporting-passkeys) |
+
 
 ### DeviceCheck
 
